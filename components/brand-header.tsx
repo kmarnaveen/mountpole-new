@@ -1,6 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+const BRAND_ACCENTS: Record<string, string> = {
+  Apple: "28,28,30",
+  Samsung: "20,96,255",
+  Google: "66,133,244",
+  Xiaomi: "255,106,0",
+  Realme: "255,204,0",
+  Motorola: "48,63,159",
+  JBL: "255,111,0",
+  Huawei: "199,22,43",
+  Honor: "34,34,34",
+};
 
 interface BrandHeaderProps {
   name: string;
@@ -17,60 +27,16 @@ export default function BrandHeader({
   productCount,
   category,
 }: BrandHeaderProps) {
-  const imgRef = useRef<HTMLImageElement>(null);
-  const [accentColor, setAccentColor] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!logo) return;
-    const extract = async () => {
-      try {
-        const { getColorSync } = await import("colorthief");
-        const img = imgRef.current;
-        if (!img) return;
-        const run = () => {
-          try {
-            const color = getColorSync(img);
-            if (color) {
-              const [r, g, b] = color.array();
-              setAccentColor(`${r}, ${g}, ${b}`);
-            }
-          } catch {
-            /* CORS */
-          }
-        };
-        if (img.complete) run();
-        else img.addEventListener("load", run, { once: true });
-      } catch {
-        /* unavailable */
-      }
-    };
-    extract();
-  }, [logo]);
+  const accentColor = BRAND_ACCENTS[name] ?? "99,102,110";
 
   return (
     <section
       className="relative overflow-hidden rounded-2xl mb-8 transition-all duration-700"
       style={{
-        background: accentColor
-          ? `linear-gradient(135deg, rgba(${accentColor}, 0.08) 0%, rgba(${accentColor}, 0.03) 50%, #f9f9f9 100%)`
-          : "#f5f5f5",
-        border: accentColor
-          ? `1px solid rgba(${accentColor}, 0.15)`
-          : "1px solid #e5e5e5",
+        background: `linear-gradient(135deg, rgba(${accentColor}, 0.08) 0%, rgba(${accentColor}, 0.03) 50%, #f9f9f9 100%)`,
+        border: `1px solid rgba(${accentColor}, 0.15)`,
       }}
     >
-      {/* hidden colour-extraction image */}
-      {logo && (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img
-          ref={imgRef}
-          src={logo}
-          alt=""
-          crossOrigin="anonymous"
-          className="sr-only"
-        />
-      )}
-
       <div className="px-6 sm:px-10 py-10 sm:py-14 flex flex-col sm:flex-row sm:items-center justify-between gap-8">
         {/* Left — text */}
         <div className="space-y-4 max-w-xl">
@@ -78,9 +44,9 @@ export default function BrandHeader({
           <span
             className="inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-medium tracking-wide uppercase border"
             style={{
-              color: accentColor ? `rgba(${accentColor}, 0.85)` : "#555",
-              borderColor: accentColor ? `rgba(${accentColor}, 0.25)` : "#ddd",
-              background: accentColor ? `rgba(${accentColor}, 0.07)` : "#eee",
+              color: `rgba(${accentColor}, 0.85)`,
+              borderColor: `rgba(${accentColor}, 0.25)`,
+              background: `rgba(${accentColor}, 0.07)`,
             }}
           >
             {category}
@@ -136,14 +102,12 @@ export default function BrandHeader({
       </div>
 
       {/* bottom accent bar */}
-      {accentColor && (
-        <div
-          className="h-0.5 w-full"
-          style={{
-            background: `linear-gradient(90deg, rgba(${accentColor},0.6) 0%, rgba(${accentColor},0.1) 60%, transparent 100%)`,
-          }}
-        />
-      )}
+      <div
+        className="h-0.5 w-full"
+        style={{
+          background: `linear-gradient(90deg, rgba(${accentColor},0.6) 0%, rgba(${accentColor},0.1) 60%, transparent 100%)`,
+        }}
+      />
     </section>
   );
 }

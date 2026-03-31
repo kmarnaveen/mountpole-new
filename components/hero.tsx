@@ -1,45 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { observe } from "colorthief";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
+import { useVideoAccent } from "@/hooks/use-video-accent";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [accent, setAccent] = useState("10,10,10");
-  const [contrastColor, setContrastColor] = useState("255,255,255");
-
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    const controller = observe(video, {
-      throttle: 300,
-      colorCount: 8,
-      onChange(palette) {
-        const dom = palette[0].rgb();
-        setAccent(`${dom.r},${dom.g},${dom.b}`);
-
-        // Pick the palette color furthest from dominant in RGB space
-        let maxDist = 0;
-        let best = palette[palette.length - 1].rgb();
-        for (const c of palette.slice(1)) {
-          const { r, g, b } = c.rgb();
-          const dist = Math.sqrt(
-            (r - dom.r) ** 2 + (g - dom.g) ** 2 + (b - dom.b) ** 2,
-          );
-          if (dist > maxDist) {
-            maxDist = dist;
-            best = { r, g, b };
-          }
-        }
-        setContrastColor(`${best.r},${best.g},${best.b}`);
-      },
-    });
-
-    return () => controller.stop();
-  }, []);
+  const { accent, contrastColor } = useVideoAccent(videoRef);
 
   useEffect(() => {
     const video = videoRef.current;
