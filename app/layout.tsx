@@ -13,7 +13,7 @@ const organizationJsonLd = {
   "@type": "Organization",
   name: siteConfig.name,
   url: siteConfig.url,
-  logo: absoluteUrl("/apple-icon.png"),
+  logo: absoluteUrl("/mountpole-logo.svg"),
   foundingDate: "2004",
   description: siteConfig.description,
   areaServed: ["CA", "US"],
@@ -103,12 +103,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: [
-      { url: "/icon.svg", type: "image/svg+xml" },
-      { url: "/icon-light-32x32.png", sizes: "32x32", type: "image/png" },
-    ],
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
     apple: "/apple-icon.png",
-    shortcut: "/icon-light-32x32.png",
+    shortcut: "/icon.svg",
   },
 };
 

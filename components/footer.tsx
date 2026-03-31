@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { Mail, Linkedin, Instagram, Twitter } from "lucide-react";
 
@@ -21,11 +22,6 @@ export default function Footer() {
           <div className="px-5 sm:px-8 md:px-12 pt-8 sm:pt-10 md:pt-12 flex flex-col sm:flex-row sm:items-start justify-between gap-4 sm:gap-6">
             <div className="space-y-2">
               <div className="flex items-center gap-2.5">
-                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md flex items-center justify-center shrink-0">
-                  <span className="text-black font-bold text-[10px] sm:text-xs tracking-tight">
-                    MP
-                  </span>
-                </div>
                 <span className="text-white font-light text-base sm:text-lg tracking-wide">
                   MountPole
                 </span>
@@ -207,6 +203,9 @@ export default function Footer() {
                 <Twitter className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
               </a>
             </div>
+            <p className="text-white/30 text-[10px] sm:text-xs font-light sm:text-right">
+              © 2026. All rights reserved. MountPole
+            </p>
           </div>
         </div>
         {/* /max-w-7xl bottom */}

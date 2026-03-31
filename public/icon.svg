@@ -1,26 +1,20 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    @media (prefers-color-scheme: light) {
-      .background { fill: black; }
-      .foreground { fill: white; }
-    }
-    @media (prefers-color-scheme: dark) {
-      .background { fill: white; }
-      .foreground { fill: black; }
-    }
-  </style>
-  <g clip-path="url(#clip0_7960_43945)">
-    <rect class="background" width="180" height="180" rx="37" />
-    <g style="transform: scale(95%); transform-origin: center">
-      <path class="foreground"
-        d="M101.141 53H136.632C151.023 53 162.689 64.6662 162.689 79.0573V112.904H148.112V79.0573C148.112 78.7105 148.098 78.3662 148.072 78.0251L112.581 112.898C112.701 112.902 112.821 112.904 112.941 112.904H148.112V126.672H112.941C98.5504 126.672 86.5638 114.891 86.5638 100.5V66.7434H101.141V100.5C101.141 101.15 101.191 101.792 101.289 102.422L137.56 66.7816C137.255 66.7563 136.945 66.7434 136.632 66.7434H101.141V53Z" />
-      <path class="foreground"
-        d="M65.2926 124.136L14 66.7372H34.6355L64.7495 100.436V66.7372H80.1365V118.47C80.1365 126.278 70.4953 129.958 65.2926 124.136Z" />
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
   <defs>
-    <clipPath id="clip0_7960_43945">
-      <rect width="180" height="180" fill="white" />
+    <clipPath id="mountainClip">
+      <ellipse cx="128" cy="130" rx="74" ry="43" />
     </clipPath>
   </defs>
+  <rect width="256" height="256" rx="52" fill="#F8F9FA" />
+  <g transform="translate(0 2)">
+    <g clip-path="url(#mountainClip)">
+      <polygon points="42,174 100,110 125,129 156,89 156,174" fill="#1D3557" />
+      <polygon points="156,89 186,121 212,103 252,174 156,174" fill="#E63946" />
+      <path d="M154 96 C137 111, 167 133, 136 174 L 166 174 C 185 138, 158 110, 155 96 Z" fill="#F8F9FA" />
+    </g>
+    <path d="M145 83 A 76 45 0 0 0 118 172" fill="none" stroke="#1D3557" stroke-width="7" stroke-linecap="round" />
+    <path d="M168 172 A 76 45 0 0 0 157 83" fill="none" stroke="#E63946" stroke-width="7" stroke-linecap="round" />
+    <line x1="156" y1="90" x2="156" y2="44" stroke="#E63946" stroke-width="5" stroke-linecap="round" />
+    <circle cx="156" cy="41" r="4" fill="#1D3557" />
+    <path d="M159 49 C 171 42, 181 58, 195 49 L 195 73 C 181 83, 171 67, 159 74 Z" fill="#E63946" />
+  </g>
 </svg>

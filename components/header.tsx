@@ -27,109 +27,132 @@ export default function Header() {
     <div className="flex flex-col">
       <TopBar />
       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
-        <div className="container px-4 md:px-6 mx-auto h-16 flex items-center justify-between">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-2 mr-6 shrink-0">
-               <Image
-                  src="/icon.svg"
-                  alt="MountPole logo"
-                  width={36}
-                  height={36}
-                  className="h-8 w-8 rounded-lg shadow-sm md:h-9 md:w-9"
-                  priority
-                />
-                <div className="flex flex-col">
-                  <span className="font-semibold text-lg tracking-tight leading-none">MountPole</span>
-                  <span className="font-light text-[10px] uppercase tracking-wider text-muted-foreground leading-none">Wholesale</span>
-                </div>
-            </Link>
+        <div className="container mx-auto flex h-18 items-center justify-between px-4 md:h-20 md:px-6">
+          {/* Logo */}
+          <Link href="/" className="mr-4 flex shrink-0 items-center lg:mr-6">
+            <Image
+              src="/mountpole-logo.svg"
+              alt="MountPole logo"
+              width={800}
+              height={600}
+              sizes="(min-width: 1024px) 75px, (min-width: 768px) 69px, 59px"
+              className="block h-11 w-auto sm:h-12 md:h-13 lg:h-14"
+              priority
+            />
+          </Link>
 
-            {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center gap-1 mx-auto">
-               {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={cn(
-                      "px-4 py-2 text-sm font-medium transition-colors hover:text-primary rounded-md",
-                      pathname === link.href ? "text-primary bg-primary/5" : "text-muted-foreground"
-                    )}
-                  >
-                    {link.label}
-                  </Link>
-               ))}
-            </nav>
+          {/* Desktop Navigation */}
+          <nav className="hidden lg:flex items-center gap-1 mx-auto">
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className={cn(
+                  "px-4 py-2 text-sm font-medium transition-colors hover:text-primary rounded-md",
+                  pathname === link.href
+                    ? "text-primary bg-primary/5"
+                    : "text-muted-foreground",
+                )}
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
 
-            {/* Right Actions */}
-            <div className="flex items-center gap-2 md:gap-4 shrink-0">
-               {/* Search */}
-               <div className={cn(
-                  "hidden lg:flex items-center bg-muted/50 border border-input rounded-full px-3 py-1.5 transition-all duration-300 ease-in-out",
-                   isSearchFocused ? "w-64 border-primary/50 bg-background shadow-sm" : "w-48 hover:bg-muted"
-               )}>
-                  <Search className="w-4 h-4 text-muted-foreground mr-2" />
-                  <input 
-                    type="text" 
-                    placeholder="Search..." 
-                    className="bg-transparent border-none outline-none text-sm w-full placeholder:text-muted-foreground/70"
-                    onFocus={() => setIsSearchFocused(true)}
-                    onBlur={() => setIsSearchFocused(false)}
-                  />
-               </div>
-
-                <Button variant="ghost" size="icon" className="hidden sm:flex relative" aria-label="Account">
-                  <User className="w-5 h-5 text-foreground/80" />
-                </Button>
-
-                <Button variant="ghost" size="icon" className="hidden sm:flex relative" aria-label="Cart">
-                    <ShoppingCart className="w-5 h-5 text-foreground/80" />
-                    <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
-                </Button>
-
-               <Button className="hidden md:inline-flex rounded-full px-6" size="sm" asChild>
-                  <Link href="/contact">Get Quote</Link>
-               </Button>
-               
-               {/* Mobile Menu */}
-               <Sheet>
-                  <SheetTrigger asChild>
-                    <Button variant="ghost" size="icon" className="lg:hidden">
-                      <Menu className="w-5 h-5" />
-                      <span className="sr-only">Toggle menu</span>
-                    </Button>
-                  </SheetTrigger>
-                  <SheetContent side="right">
-                    <SheetHeader className="text-left border-b pb-4 mb-4">
-                      <SheetTitle className="font-bold text-xl">Menu</SheetTitle>
-                    </SheetHeader>
-                    <div className="flex flex-col gap-2">
-                       {navLinks.map((link) => (
-                         <SheetClose key={link.href} asChild>
-                           <Link 
-                              href={link.href} 
-                              className={cn(
-                                "px-4 py-3 text-lg font-medium hover:bg-muted rounded-md transition-colors",
-                                pathname === link.href ? "text-primary bg-primary/5" : "text-foreground"
-                              )}
-                            >
-                              {link.label}
-                           </Link>
-                         </SheetClose>
-                       ))}
-                       <div className="pt-4 mt-4 border-t flex flex-col gap-4">
-                          <Button className="w-full rounded-full" asChild>
-                            <Link href="/contact">Get Quote</Link>
-                          </Button>
-                           <Button variant="outline" className="w-full rounded-full" asChild>
-                            <Link href="/login">Login</Link>
-                          </Button>
-                       </div>
-                    </div>
-                  </SheetContent>
-               </Sheet>
+          {/* Right Actions */}
+          <div className="flex items-center gap-2 md:gap-4 shrink-0">
+            {/* Search */}
+            <div
+              className={cn(
+                "hidden lg:flex items-center bg-muted/50 border border-input rounded-full px-3 py-1.5 transition-all duration-300 ease-in-out",
+                isSearchFocused
+                  ? "w-64 border-primary/50 bg-background shadow-sm"
+                  : "w-48 hover:bg-muted",
+              )}
+            >
+              <Search className="w-4 h-4 text-muted-foreground mr-2" />
+              <input
+                type="text"
+                placeholder="Search..."
+                className="bg-transparent border-none outline-none text-sm w-full placeholder:text-muted-foreground/70"
+                onFocus={() => setIsSearchFocused(true)}
+                onBlur={() => setIsSearchFocused(false)}
+              />
             </div>
+
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hidden sm:flex relative"
+              aria-label="Account"
+            >
+              <User className="w-5 h-5 text-foreground/80" />
+            </Button>
+
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hidden sm:flex relative"
+              aria-label="Cart"
+            >
+              <ShoppingCart className="w-5 h-5 text-foreground/80" />
+              <span className="absolute top-1 right-1 w-2 h-2 bg-primary rounded-full"></span>
+            </Button>
+
+            <Button
+              className="hidden md:inline-flex rounded-full px-6"
+              size="sm"
+              asChild
+            >
+              <Link href="/contact">Get Quote</Link>
+            </Button>
+
+            {/* Mobile Menu */}
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="lg:hidden">
+                  <Menu className="w-5 h-5" />
+                  <span className="sr-only">Toggle menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right">
+                <SheetHeader className="text-left border-b pb-4 mb-4">
+                  <SheetTitle className="font-bold text-xl">Menu</SheetTitle>
+                </SheetHeader>
+                <div className="flex flex-col gap-2">
+                  {navLinks.map((link) => (
+                    <SheetClose key={link.href} asChild>
+                      <Link
+                        href={link.href}
+                        className={cn(
+                          "px-4 py-3 text-lg font-medium hover:bg-muted rounded-md transition-colors",
+                          pathname === link.href
+                            ? "text-primary bg-primary/5"
+                            : "text-foreground",
+                        )}
+                      >
+                        {link.label}
+                      </Link>
+                    </SheetClose>
+                  ))}
+                  <div className="pt-4 mt-4 border-t flex flex-col gap-4">
+                    <Button className="w-full rounded-full" asChild>
+                      <Link href="/contact">Get Quote</Link>
+                    </Button>
+                    <Button
+                      variant="outline"
+                      className="w-full rounded-full"
+                      asChild
+                    >
+                      <Link href="/login">Login</Link>
+                    </Button>
+                  </div>
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </header>
     </div>
-  )
+  );
 }
