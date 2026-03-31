@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" dir="" prefix="og:http://ogp.me/ns#">
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="Access-Control-Allow-Origin" content="https://consumer-res.huaweistatic.com"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta name="description" content="Error"/>
+<meta name="keywords" content="Error"/>
+<meta name="GENERATOR" content=" 8.00.7601.19003"/>
+<meta name="robots" content="," />
+
+
+    <title>Error</title>
+
+
+
+
+
+
+
+<script type="text/javascript">window.pageLoadStart = new Date().getTime();</script>
+<link rel="shortcut icon" href="/dam/content/dam/huawei-cbg-site/common/huawei-logo.png" type="image/png" />
+<link rel="icon" href="/dam/content/dam/huawei-cbg-site/common/huawei-logo.png" type="image/png" />
+<link rel="bookmark" href="/dam/content/dam/huawei-cbg-site/common/huawei-logo.png" type="image/png" />
+
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/public-v4/css/public-v4-d007d5e9ac306a8ed2fa769cea4d88501478f4eeccdfe26d3e9aaf870b6a8c83.min.css"/>
+
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-public-userLogin/css/token-expire-dialog-3fe60a67e6d1505146938496cd60a6d71d55a1f01ac0b28acbe57e9609b79530.min.css"/><link rel="stylesheet" type="text/css" href="/content/.resources/huawei-cbg-site-lm-basic/webresources/opensource/swiper/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/common-v4-nav-v2/css/common-v4-nav-v2-e7d40edf5601ee0afd89b5840865a6cd3dce0400435dceb15c5deed8e82721a3.min.css"/>
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-mkt/v5/common/common-header-v5/css/common-header-v5-6d4f2eed6fdcafe11d9ce2e04ab3250c46b7fecbb4d7a6b876c55adf4268528b.min.css"/>
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-mkt/v6/common/button/css/mkt-btn-8f6ea3f9497218e90ecc76c0f9180c23f84e62f3914281a5e2215451e5645299.min.css"/>
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-offer/clientlib-layout/css/clientlib-layout-d015a09bcfaebf95bcc6545751dc261ea7f9580d70494464adaa5d9f5c9c3a99.min.css"/>
+
+
+
+
+<script type="text/javascript">
+
+    function getEncCookie(name){
+        var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+        if(arr=document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    // data layer javascript
+    window.digitalData={"page":{"pageInfo":{"pageName":"cbg:en:error","countryCode":"EN","siteCode":"en","siteCode2":"en","siteName":"Global (EN)","appNum":"A59919963","language":"en","site":"cbg","uri":"/en/error/","siteCodeForAPI":"worldwide","isProductDetailPage":false,"isProductMiniSitePage":false,"knowledgeHost":"//consumer-tkb.huawei.com","gaiaPath":"","checkDomain":false,"excludeDomainList":"","publishedHost":"https://consumer.huawei.com","siteCurrency":"$","baiduMapKeyV3":null,"ccpcApiKey":"DE","serviceGatewayPath":"https://sgw-sg.c.huawei.com/forward","staticResHost":"https://"},"category":{"pageType":"error","primaryCategory":"error","subCategory1":null,"subCategory2":null,"subCategory3":null},"pageType":{"type":""}},"event":[]}
+
+    window.encUser = getEncCookie("data_layer_enc");
+
+    // is the site Arabic site
+    window.isArabicSite = false;
+
+    // map type
+    window.customMapType = "gaia";
+</script>
+<script type="text/javascript" src="/.resources/huawei-cbg-site-lm-basic/webresources/opensource/jquery/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    var service_sessionuuid_support = "base/basecommonService/sessionuuid";
+
+    var SITE_CODE = window.digitalData.page.pageInfo.siteCodeForAPI || window.digitalData.page.pageInfo.siteCode;
+    var APP_NUM = window.digitalData.page.pageInfo.appNum;
+    var site_language = window.digitalData.page.pageInfo.language;
+    var countryCode = window.digitalData.page.pageInfo.countryCode;
+    var allowHA = false;
+    window.isEcommercePage = false;
+</script>
+
+    <input id="ha-report-url" type="hidden" value="https://metrics-dra.dt.dbankcloud.com:443/webv2">
+
+<script type="text/javascript">
+(function () {
+	window.isHealthWebView = function() {
+		return window.JsInteraction && typeof window.JsInteraction.isFromHuaweiHealth === 'function' && window.JsInteraction.isFromHuaweiHealth();
+	}
+
+    window.isMyHuaweiAppView = function () {
+        return window.integrationJsInterface || window.integrationJsInterfaceWebview;
+    }
+
+	// ????????
+	const appWebViewStyle = `
+		.huawei-v4 #header-v4,
+		.huawei-v4 #second-navigation-v4,
+		.huawei-v4 #robotIcon,
+		.huawei-v4 #cookie-information-template-wrapper,
+		.huawei-v4 .huawei-convergent-cookie,
+		.huawei-v4 .optanon-alert-box-wrapper,
+		.huawei-v4 .nps-survey,
+		.huawei-v4 .hwv3-animate-box,
+		.huawei-v4 .huawei-bootom-cookie,
+		.huawei-v4 #header-placeholder,
+		.huawei-v4.nav-hidden .huawei-ie-tips {
+			display: none !important;
+		}`;
+
+	function addCssByStyle(cssString) {
+		const style = document.createElement("style");
+		style.setAttribute("type", "text/css");
+
+		const cssText = document.createTextNode(cssString);
+		style.appendChild(cssText);
+
+		const heads = document.getElementsByTagName("head");
+		if (heads.length) {
+			heads[0].appendChild(style);
+		} else {
+			document.documentElement.appendChild(style);
+		}
+	}
+
+
+    /**
+     * ??????????????????(window.hilink) ?? MHW-APP(integrationJsInterface)??
+     *
+     * @returns {*|boolean}
+     */
+    function isSupportPageInAppView() {
+        return window.digitalData && window.digitalData.page.category.pageType == 'support'
+            && (window.hilink || window.hicareJsInterface || window.integrationJsInterface || window.integrationJsInterfaceWebview);
+    }
+
+	function isEcommerceSite() {
+		const siteCode = window.digitalData ? window.digitalData.page.pageInfo.siteCode2 : '';
+		const ecommerceSiteCodeList = ['uk', 'fr', 'de', 'es', 'it', 'nl','ro', 'pt', 'pl', 'cz', 'tr', 'my', 'sa', 'ae', 'th', 'jp', 'pe', 'mx', 'cl', 'co', 'za', 'ru', 'ph'];
+		return ecommerceSiteCodeList.indexOf(siteCode) > -1;
+	}
+
+    // ??????????????????????contact us?
+    if ((isHealthWebView() && isEcommerceSite())) {
+        let webViewStyle = `.huawei-v4 .v4.n09-footer .contact__block.footerv4-payment-types .footerv4-payment-cnt {
+        						border-bottom: 0px!important;
+							}
+							.huawei-v4 .v4.n09-footer .contact__block:not(.footerv4-payment-types),
+							.huawei-v4 .v4.n09-footer .language-switcher{
+								display:none!important;
+							}`
+        addCssByStyle(appWebViewStyle + webViewStyle);
+    }
+    // ????????webView????????
+    if (isSupportPageInAppView()) {
+        let webViewStyle = `.huawei-v4 .v4.n09-footer .container div:not(.policy-text) {
+								display: none !important;
+							}`
+        addCssByStyle(appWebViewStyle + webViewStyle);
+    }
+
+    // myHuaweiApp????
+    if (isMyHuaweiAppView()) {
+        let appWebviewCookieHidden = `.huawei-v4 #coiConsentBanner {
+            display: none!important;
+        }`
+        addCssByStyle(appWebviewCookieHidden + appWebViewStyle);
+    }
+
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return decodeURIComponent(r[2]);
+        }
+        return null; //?????
+    }
+
+    function isMiniApp(){
+        return getUrlParam("source") === "miniApp"
+    }
+
+    if(isMiniApp()){
+        let webViewStyle = `
+        		.huawei-v4 .v4.n09-footer,
+        		.huawei-v4 .huawei-ie-tips {
+			        display: none !important;
+		        };
+                `
+        addCssByStyle(appWebViewStyle+webViewStyle)
+    }
+
+})();
+</script>
+
+<script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+
+    function getChapter1() {
+        var pageType = window.digitalData.page.category.pageType;
+        pageType = pageType.split("_")[0];
+        var chapter1 = "";
+        switch (pageType) {
+            case "homepage":
+                chapter1 = "Home";
+                break;
+            case "support":
+                chapter1 = "support";
+                break;
+            case "product-detail":
+                chapter1 = "Mkt products";
+                break;
+            case "product-listing":
+                chapter1 = "Mkt products";
+                break;
+            default:
+                chapter1 = window.digitalData.page.category.primaryCategory;
+        }
+        return chapter1;
+    }
+
+    function getChapter2() {
+        var pageType = window.digitalData.page.category.pageType;
+        pageType = pageType.split("_")[0];
+        var chapter2 = window.digitalData.page.category.subCategory1;
+        if (pageType == "product-detail" || pageType == "product-listing") {
+            chapter2 = window.digitalData.page.category.primaryCategory;
+        }
+        return chapter2;
+    }
+
+    function getChapter3() {
+        var chapter3 = window.digitalData.page.category.subCategory2;
+        var pageType = window.digitalData.page.category.pageType;
+        pageType = pageType.split("_")[0];
+        if (pageType == "product-detail") {
+            chapter3 = window.digitalData.page.category.subCategory1;
+        }
+        return chapter3;
+    }
+
+    function getPageName() {
+        var pageName = "";
+        var pathArr = location.pathname.split("/");
+        for (var index = pathArr.length - 1; index > 0; index--) {
+            if (pathArr[index] != "") {
+                pageName = pathArr[index];
+                if (pageName.indexOf(".html") != -1) {
+                    pageName = pageName.split(".")[0];
+                }
+                break;
+            }
+        }
+        return pageName;
+    }
+
+    /* *
+     *  ????APP?????siteId
+     * */
+    function getMktDmpaSiteId() {
+        var dmpa_siteId = "";
+        if (window.integrationJsInterface || window.integrationJsInterfaceWebview) {
+            dmpa_siteId = "HuaweiStore-app";
+        } else {
+            dmpa_siteId = $(window).width() < 1199.98 ? "HuaweiStore-wap" : "HuaweiStore-web";
+        }
+        return dmpa_siteId;
+    }
+
+    var DMPA_SCRIPT_BASEURL =  "";
+    var dmpa_init_mkt_dmpa_params = {
+        "siteId": getMktDmpaSiteId(),
+        "IP": null,
+        "userId": null,
+        "sessionId": null,
+        "country": digitalData.page.pageInfo ? digitalData.page.pageInfo.siteCode2 : "",
+        "siteLanguage": digitalData.page.pageInfo.language ? digitalData.page.pageInfo.language.replace("_", "-") : "",
+        "siteName": digitalData.page.pageInfo ? digitalData.page.pageInfo.siteCode2 : ""
+    }
+
+    /* *
+     *
+     *  ??dmpa5????
+     *
+     * */
+    function initMktDmpa5() {
+        if (typeof dmpa5 === 'undefined' || document.readyState !== 'complete') {
+            return;
+        }
+        //????ID
+        try {
+            //??uum?API
+            var uumApi = mktConfig.uumApi;
+            if (uumApi != null && uumApi != "") {
+                var uumHost = uumApi.substring(0, uumApi.search("/users"));
+                //tokenApi
+                var tokenApiUrl = uumHost + "/gateway/csrfToken?_=" + Date.now();
+
+
+                //???????????UUM????????
+                $.ajax({
+                    type: "GET",
+                    url: uumApi + "/v1/login/info",
+                    dataType: "json",
+                    xhrFields: {withCredentials: true}
+                }).always(function (result) {
+                    if (result && result.resultCode == 0) {
+                        dmpa_init_mkt_dmpa_params.userId = result.data.userId;
+                    }
+
+                    //??sessionId
+                    $.ajax({
+                        type: "get",
+                        url: tokenApiUrl,
+                        xhrFields: {
+                            withCredentials: true
+                        },
+                        crossDomain: true
+                    }).always(function (result) {
+                        if (result && result.resultCode == 0) {
+                            dmpa_init_mkt_dmpa_params.sessionId = result.data;
+                        }
+                        setMktDmpaParams(dmpa_init_mkt_dmpa_params);
+                    });
+
+                })
+
+            } else {
+                dmpa_init_mkt_dmpa_params.userId = '';
+                //???????
+                setMktDmpaParams(dmpa_init_mkt_dmpa_params);
+            }
+        } catch (e) {
+
+        }
+
+    }
+
+    function setMktDmpaParams(dmpaParams) {
+        if (typeof dmpa5 === 'undefined') {
+            return;
+        }
+        dmpa5('set', dmpaParams); //???????
+        dmpa5('setTrackerUrl', DMPA_SCRIPT_BASEURL + "/");
+        dmpa5('setAutoSendPV', false);//?????? pv
+        dmpa5('setDMPAVersion', 5); // ??DMPA??
+        dmpa5('setAutoSendPP', false);//?????? pp
+        dmpa5('setAutoLinkTracking', false);//?????? link
+        //??dmpa???????pv
+        trackMktDmpaPV();
+    }
+
+    /**
+     * ??dmpa???userId
+     */
+    function buildMktDmpaUserId() {
+        var userId = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxx'.replace(/[xy]/g, function (c) {
+            var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8);
+            return v.toString(16);
+        });
+        if (typeof $.cookie === 'function') {
+            var site_name = window.site || window.siteCode || '';
+        }
+        return userId;
+    }
+
+    /**
+     * ??dmpa?pv????mkt/??/??
+     *
+     */
+    function trackMktDmpaPV() {
+
+        // ????? App Webview
+        var isAppWebview = window.integrationJsInterface || window.integrationJsInterfaceWebview;
+
+        var referrerUrl = '';
+        if (document.referrer.length > 0) {
+            referrerUrl = document.referrer;
+        }
+        try {
+            if (referrerUrl.length == 0 && opener.location.href.length > 0) {
+                referrerUrl = opener.location.href;
+            }
+        } catch (e) {}
+
+        var pvData = {
+            "title": $("title").text() || null,
+            "location": location.origin + location.pathname || null,
+            "uri": digitalData.page.pageInfo.uri || null,
+            "referrerUrl": referrerUrl || null,
+            "trackSource": null,
+            "trackMedium": null,
+            "trackCampaign": null,
+            "trackContent": null,
+            "trackTerm": null,
+            "pageLoadDelay": null,
+            "pageHierarchy": null,
+            "subModuleName": getMktDmpaSubModuleName()
+        }
+
+        // PDP????????????
+        if (digitalData.page.pageInfo.isProductDetailPage &&
+            digitalData.product && digitalData.product.productInfo) {
+
+            pvData["additionalProperty"] = JSON.stringify({
+                "product_name": digitalData.product.productInfo.marketingName,
+                "page_view": "PDP"
+            });
+        }
+
+        if (!isAppWebview) {
+            dmpa5("trackPageView", pvData);
+        }
+    }
+
+    /**
+     * ???????
+     */
+    function getMktDmpaSubModuleName() {
+        var url = location.href;
+        var moduleName = "";
+        if (url.indexOf("/support/") != -1) {
+            moduleName = "Support";
+        } else if (url.indexOf("/community/") != -1) {
+            moduleName = "Community";
+        } else if (url.indexOf("/promo/") != -1 || url.indexOf("/offer/") != -1) {
+            //????????
+            moduleName = "Activity";
+        } else if (url.indexOf("/shop/") != -1 || url.indexOf("/buy/") != -1) {
+            moduleName = "eCommerce";
+        } else {
+            moduleName = "Marketing";
+        }
+        return moduleName;
+    }
+</script>
+
+    <script>
+        var siteCode = window.digitalData ? window.digitalData.page.pageInfo.siteCode2 : '';
+        var pageCategory = window.digitalData ? window.digitalData.page.category.pageType : '';
+        var countryCode = window.digitalData ? window.digitalData.page.pageInfo.countryCode : '';
+        var language = window.digitalData ? window.digitalData.page.pageInfo.language : '';
+        var siteName = window.digitalData ? window.digitalData.page.pageInfo.siteName : '';
+        var pageProductInfo = window.digitalData.product ? window.digitalData.product.productInfo : '';
+
+        function dateFormat(fmt) {
+            var d = new Date();
+            var local = d.getTime();
+            var offset = d.getTimezoneOffset() * 60000;
+            var localUtc = new Date().getTimezoneOffset() / 60;
+            var utcTime;
+            if (localUtc > 0) {
+                utcTime = local - offset;
+            } else {
+                utcTime = local + offset;
+            }
+            var CNTime = utcTime + 3600000 * 8;
+            var nd = new Date(CNTime);
+            var o = {
+                "M+": nd.getMonth() + 1,
+                "d+": nd.getDate(),
+                "H+": nd.getHours(),
+                "m+": nd.getMinutes(),
+                "s+": nd.getSeconds(),
+                "q+": Math.floor((nd.getMonth() + 3) / 3),
+                "S": nd.getMilliseconds()
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (nd.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+
+        // hitTimeStamp : YYYYMMDD_hh:mm:ss ???(GMT+08:00) China Time???GA???????
+        window.dataLayer.push({
+            userId: "",
+            sessionId: "",
+            firstSourceMedium: "",
+            lastSourceMedium: "",
+            accountStatus: "",
+            loginStatus: "",
+            hitTimeStamp: dateFormat("yyyy-MM-dd_HH:mm:ss"),
+            pageCategory: pageCategory,
+            siteCountryCode: countryCode,
+            siteLanguage: language,
+            siteCountryName: siteName,
+            "productMktName": pageProductInfo && pageProductInfo.marketingName || '',
+            "productCategory": pageProductInfo && pageProductInfo.category || '',
+            "userCategory": ""
+        });
+
+        if (pageCategory == 'search') {
+            var reg = new RegExp("(^|&)keyword=([^&]*)(&|$)");
+            var val = window.location.search.substr(1).match(reg);
+            if (val != null && val[2]) {
+                var searchKeyword = decodeURIComponent(val[2])
+                window.dataLayer.push({
+                    cat55: "product",
+                    kw55: searchKeyword,
+                    siteSearchResults: ""
+                });
+            };
+
+        }
+    </script>
+
+<script type="text/javascript">
+    /**
+     * ??url????
+     */
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //??????????????????
+        var r = window.location.search.substr(1).match(reg); //??????
+        if (r != null) {
+            return decodeURIComponent(r[2]);
+        }
+        return null; //?????
+    }
+</script>
+
+
+
+
+            <script type="text/plain" class="cookie-package-controller analysis-cookie default-load-cookie">
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js'
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-MBP7H56');
+
+            </script>
+
+
+
+    <script type="text/javascript">
+        var enableExternalLinkPopup = true;
+        var externalLinkWhitelist = JSON.parse("[\"huawei.com\",\"huawei.cn\",\"h5hosting-drcn.dbankcdn.cn\",\"vmall.com\",\"dpd.pt\",\"cn.biosenseclinic.com\",\"contentcenter-drcn.dbankcdn.com\",\"css-complain-drcn.platform.dbankcloud.cn\",\"fancourier.ro\"]");
+    </script>
+
+<script type="text/javascript">
+    let mktWebResourceBaseDir = {};
+    let adminWebResourceBaseDir = {};
+    let appsWebResourceBaseDir = {};
+    let opensourceResourceBaseDir = {};
+    let forumWebResourceBaseDir = {};
+    mktWebResourceBaseDir["designPath"] = "/.resources/huawei-cbg-site-lm-basic/webresources/mkt";
+    adminWebResourceBaseDir["designsPath"] = "/.resources/huawei-cbg-site-lm-basic/webresources/admin";
+    appsWebResourceBaseDir["designsPath"] = "/.resources/huawei-cbg-site-lm-basic/webresources";
+    opensourceResourceBaseDir["designsPath"] = "/.resources/huawei-cbg-site-lm-basic/webresources/opensource";
+    forumWebResourceBaseDir["designPath"] = "/.resources/huawei-cbg-site-lm-community/webresources/community";
+</script>
+<script>
+    let Granite = {
+        public:false
+    };
+        Granite.public = true;
+</script>
+
+<script type="text/javascript">
+    var enableNewCookieCfg = Boolean(false);
+    var cookieModeSetting = "noPromptMode";
+    var ctlAnalysisCookie = Boolean(false);
+    var ctlAdvertiseCookie = Boolean(false);
+    var enableDefaultCookieAccept = Boolean(false);
+    var pushForConsentTime = "";
+    var pushForConsentTimeNewMode = "";
+
+	isECommerceSite = window.isECommerceSite || 'None';
+	var isEcommerceSiteFlag = Boolean(false);
+    // ???My Huawei App??? ??
+    var enableShareFeature = Boolean(true);
+    // My Huawei App ?????????
+    var appDownloadLink = "";
+    // ???? App ? FA ????
+    var enableAppFa = Boolean(false);
+</script>
+
+<script type="text/javascript">
+    var supportv2 = {};
+    supportv2["apiBaseUrl"] = "https:\/\/ccpce\-de.consumer.huawei.com\/ccpcmd\/services\/dispatch\/secured\/CCPC\/EN";
+    supportv2["captchaUrl"] = "contentcenter\-dre.dbankcdn.com\/pub_1\/cscaptcha_captcha_900_9\/b\/v3\/netease";
+    supportv2["captchaServiceDomain"] = "csc\-adapter\-dre.security.dbankcloud.com";
+    supportv2["toCApiUrl"] = "https:\/\/itrinity\-de.c.huawei.com";
+    supportv2["supportApiUrl"] =  "https:\/\/consumer.huawei.com\/support";
+    supportv2["cmktApiUrl"] =  "https:\/\/consumer\-api\-sg.huawei.com\/cuepf";
+    supportv2["casUrl"] = "https:\/\/id5.cloud.huawei.com\/CAS";
+    supportv2["logisticcode"] = "";
+    supportv2["designsPath"] = "/.resources/huawei-cbg-site-lm-basic/webresources/support";
+    supportv2["myDeviceI18nValue"] = "My device";
+    supportv2["productCategoryMapping"] = "[]";
+    supportv2["gaEntrance"] = ""
+    supportv2["gaModule"] = ""
+    supportv2["entranceLv2ForGa"] = ""
+    supportv2["productCategory1"] = ""
+    supportv2["productCategory2"] = ""
+    supportv2["productCategory3"] = ""
+    supportv2["productCategory4"] = ""
+    supportv2["ccpcSgwAppId"] = "96E6614BD648F3582A2D6D657C5CC768"
+    supportv2["ccpcMyHuaweiApiId"] = "EDCF82D77A5AB59706CD5F2163F67427"
+    supportv2["uumSgwAppId"] = "EDCF82D77A5AB59706CD5F2163F67427"
+    supportv2["enableCsrfVerify"] = "true" == 'true';
+    supportv2["weComSdk"] = "https://wwcdn.weixin.qq.com/node/open/js/wecom-jssdk-2.0.2.js";
+    supportv2["weComCorpId"] = "ww1c80e3515f0cf2c3";
+    supportv2["weComAgentId"] = "1000397";
+    supportv2["weComOauth2BaseUrl"] = "https://open.weixin.qq.com";
+    supportv2["uniportalBaseUrl"] = "https://uniportal.huawei.com";
+    supportv2["clientId"] = "cbgwebsite";
+    supportv2["salesAdvisorBaseUrl"] = "https://iretail.huawei.com/sales-advisor/console/services";
+    supportv2["agreementHost"] = "https://iretail.huawei.com/retail/rp/web/index.html#";
+</script>
+
+<script type="text/javascript">
+    var loginApiUrl={};
+    loginApiUrl["cmscApiUrl"] = "";
+    loginApiUrl["huaweitimeApiUrl"] = "";
+
+    var mktConfig={};
+    mktConfig["websiteFunctionApi"] = "";
+    mktConfig["uumApi"] = "https:\/\/itrinity\-sg.c.huawei.com";
+    mktConfig["sgwApi"] = (window.digitalData && window.digitalData.page.pageInfo.serviceGatewayPath) ? window.digitalData.page.pageInfo.serviceGatewayPath : "https:\/\/sgw\-sg.c.huawei.com\/forward";
+</script>
+
+
+<input type="hidden" id="month_txt" value="month txt" />
+
+
+<input type="hidden" id="underageTips" value="" btnText="" />
+<input type="hidden" id="userAccountLock" data-title=""
+       data-desc="" data-btn=""/>
+
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/public-v4/js/public-v4-60f473788509de082f08c150fab645a38bbdd87078d5f12baebf724ca5c963e4.min.js"></script>
+
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/opensource/opensource-d1c223ce411f389c9bbe042e1d74a9cbfdce55c26f3d6cd168670a3a2aadbc7a.min.js"></script>
+
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/opensource/jquery-cookie/jquery-cookie-152a2a7c125aad4a74664a45dd3e50a0852ea66986a91416c365ed9aee202a52.min.js"></script>
+
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-public-userLogin/js/clientlib-public-userLogin-123cd64e2a961ac8bf4b3fc854a344229e78356465a71cd5ffd916a5a0713ca1.min.js"></script><script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-public-HiAnalyticsJSSDK/js/HiAnalyticsJSSDK-42fa12386e6aba17841e87a375630d234354f174de01242d2e1c94caf08f1c86.min.js"></script>
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-public-dmpa/js/clientlib-public-dmpa-08851e0a27b540ce5831a4ad047e17b242bc5108f43ef92a4db03af319b09255.min.js"></script>
+
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/opensource/xss/xss-6ce00e81fa32bc3428eda2a33a39b25733e52e71b6a948c78333e1ab3a8ef9ed.min.js"></script>
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-offer/component-bar/css/phoenixHotAreaIcon-534240be6d0759e46ee323a025bd028207a8291a59cd3659adbf5543591ccf37.min.css"/><script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/opensource/swiper/swiper-6213566cc44009ceca5731af62afbedacf726a80f53fd6ef86e629e84f4afe7d.min.js"></script><style>
+    a[href="javascript:return false;"] {
+        cursor: initial !important;
+    }
+</style>
+
+<!--/* ??ios safari????????????telephone?? */-->
+<meta name="format-detection" content="telephone=no"/>
+
+<input id="is-edit-mode" type="hidden" value="false">
+<!-- To distinguish with AEM instance -->
+<input id="is-magnolia-instance" type="hidden" value="true">
+
+
+    <!--/* ?????? */-->
+    <script type="text/javascript">
+      // ??
+      var siteCode = window.digitalData ? window.digitalData.page.pageInfo.siteCode2 : '';
+      var ec_siteCode = window.digitalData ? window.digitalData.page.pageInfo.siteCode2 : '';
+      var ecommerceSiteType = "None";
+      var isECommerceSite = ecommerceSiteType ? ecommerceSiteType : "None";
+      var apiHost = "";
+      var loginApiHost = "";
+      var upPersonalCenterLink = "";
+      var loginLink = "";
+      var servingGatewayHost = "";
+
+      // ???????????
+      var ecCurrencyCode = "";
+
+      // ???????????????
+      var putCurrencyFront = "true" !== ''
+        ? JSON.parse("true")
+        : true;
+
+      // ???????from????
+      var showFrom = false;
+      // ???????from????
+      var putFromFront = true;
+      // ????????????
+      var thousandSeparator = "";
+      // ??????????
+      var decimalPoint = "";
+      // ?????????????
+      var showDecimal = true;
+      var showIntegerDecimal = true;
+      // ?????????????
+      var showCurrencySpace = true;
+      // ??
+      var ecTimezone = "none";
+      // vmall????
+      var vmallLogoutAPI = "";
+      // vmall????????????
+      var vmallLoginImgUrl = "";
+      // RRP
+      var enableRRP = false;
+      var RRPText = "";
+      if (enableRRP) {
+        RRPText = "";
+      }
+
+      // ??????
+      var enableScribes = true;
+
+      // rrp????
+      var rrpTips = "";
+
+      // ????save???save??
+      var enableShowSave = true;
+
+      // save??
+      var saveText = "";
+
+      // trade in????????PLP??????????
+      var enableTradeIn = false;
+      // ????????
+      var enableInstallmentCfg = false;
+      // ??????
+      var enableInterestFree = false;
+      // ????
+      var interestFreeText = "";
+      // ?????
+      var insatallmentLeftText = "";
+      // ?????
+      var insatallmentRightText = "";
+      // ??????
+      var installmentDispType = "numberAndAmount";
+      // APP DMPA??
+      var enableAppDmpa = false;
+
+      // ???????????
+      var enableUnitedLoginForHealth = false;
+    </script>
+
+    <!--/* value from -> home page properties > ECOMMERCE CONFIG */-->
+
+
+<input type="hidden" id="offer-page-type" value="default">
+<input type="hidden" id="offer-home-page" value="">
+<input type="hidden" id="aem-run-mode" value="">
+
+<!--/* ???????? */-->
+
+</head>
+<body class="huawei-v4 huawei-en     ">
+
+<script type="text/plain" class="optanon-category-2 analysis-cookie default-load-cookie">
+    $(function () {
+        var curPageCategory = window.digitalData ? window.digitalData.page.category.pageType : "";
+        var haAvailableMktPageTypes = ['homepage','product-listing','product-detail','product-detail_specs','search'];
+
+        if (window.isECommerceSite !== "None"
+            && haAvailableMktPageTypes.includes(curPageCategory) && window.ecCom) {
+            // HA????
+            try {
+                var haAutoTrackTimerMkt = null;
+                if (window._hasdk) {
+                    ecCom.HATrack.autoTrack();
+                } else {
+                    haAutoTrackTimerMkt = setInterval(function () {
+                        if (window._hasdk) {
+                            clearInterval(haAutoTrackTimerMkt);
+                            ecCom.HATrack.autoTrack();
+                        }
+                    }, 100);
+                }
+            } catch (error) {
+            }
+        }
+    });
+</script>
+
+        <style>
+            .header-tag-title.seo{
+                position:absolute;
+                display: block;
+                height: 0;
+                width: 0;
+                overflow: hidden;
+                z-index: -1;
+            }
+        </style>
+        <h1 class="header-tag-title seo">
+            Huawei Global | Smartphones,Laptops,Tablets,Watches and Smart Home
+        </h1>
+
+
+
+
+
+
+
+<input title="cookie" type="hidden" id='cookieType' value="hwcookie" />
+        <div class="huawei-bootom-cookie">
+            <div class="huawei-cookie-cnt">
+                    <div class="huawei-cookie-txt">
+                        We use cookies to improve our site and your experience. By continuing to browse our site you accept our cookie policy.
+                        <a href="/en/legal/cookie-policy/" target="" rel="" title=" Find out more"> Find out more</a>
+                        <svg class="huawei-cookie-close" width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="#7f7f7f" fill-rule="evenodd">
+                                <path d="M8 7l17 17-1 1L7 8z"></path>
+                                <path d="M7 24L24 7l1 1L8 25z"></path>
+                            </g>
+                        </svg>
+                    </div>
+            </div>
+        </div>
+
+
+
+<span class="popular-text hidden" data-value="Popular results"></span>
+<span class="suggested-text hidden" data-value="Suggested results"></span>
+    <div class="huawei-ie-tips" style="display: none;">
+        <div class="huawei-ie-cnt">
+            <div class="huawei-ie-txt">For a better user experience, please use the latest version of Internet Explorer or switch to another browser.
+                <a class="huawei-ie-close" href="javascript:;" title="close">
+                    <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#3C3C3C" fill-rule="evenodd">
+                            <path d="M8 7l17 17-1 1L7 8z"></path>
+                            <path d="M7 24L24 7l1 1L8 25z"></path>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+<div class="v4 v5-style header-placeholder nav-v2" id="header-placeholder"></div>
+
+<div class="v4 header v5-style     slide-down-corporation  nav-v2" id="header-v4" data-component="header"  role="navigation">
+    <div id="topTipsBox" class="top-tips-box">
+            <div class="ip-jump-wrap ip-jump-v5"></div>
+    </div>
+
+        <div class="v4 n04-platform-selection platform-selection nav-v2"
+             data-component="n04-platform-selection">
+            <button aria-haspopup="true" role="button" aria-expanded="false" class="platform-selection__toggle js-platform-toggle" type="button">
+                Consumer <span class="icon font-ico-arrow-down"></span>
+            </button>
+            <div class="platform-selection__content">
+                <div class="container">
+                    <button class="icon-close">
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <div class="platform-selection__items row">
+                            <a  data-title="Consumer"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-bgname="Consumer"
+                                href="javascript:return false;"
+                                class="platform-selection__item col-md-6 col-lg-3">
+                                <div class="platform-selection__wrap">
+                                    <p class="platform-selection__link platform-selection__link--active">
+                                        Consumer <span class="icon font-ico-arrow-down"></span>
+                                    </p>
+                                    <p class="platform-selection__item-content">Smartphones, Laptops &amp; Tablets, Wearables and More</p>
+                                </div>
+                            </a>
+                            <a  data-title="Corporate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-bgname="Corporate"
+                                href="https://www.huawei.com/en/?ic_medium=hwdc&amp;ic_source=cbg_header_corp"
+                                class="platform-selection__item col-md-6 col-lg-3">
+                                <div class="platform-selection__wrap">
+                                    <p class="platform-selection__link platform-selection__link">
+                                        Corporate <span class="icon font-ico-arrow-down"></span>
+                                    </p>
+                                    <p class="platform-selection__item-content">About Huawei, Press&amp;Event, and More</p>
+                                </div>
+                            </a>
+                            <a  data-title="Enterprise"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-bgname="Enterprise"
+                                href="https://e.huawei.com/en/?ic_medium=hwdc&amp;ic_source=cbg_header_ent"
+                                class="platform-selection__item col-md-6 col-lg-3">
+                                <div class="platform-selection__wrap">
+                                    <p class="platform-selection__link platform-selection__link">
+                                        Enterprise <span class="icon font-ico-arrow-down"></span>
+                                    </p>
+                                    <p class="platform-selection__item-content">Products, Solutions and Services for Enterprise</p>
+                                </div>
+                            </a>
+                            <a  data-title="Carrier"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-bgname="Carrier"
+                                href="https://carrier.huawei.com/en/?ic_medium=hwdc&amp;ic_source=cbg_header_car"
+                                class="platform-selection__item col-md-6 col-lg-3">
+                                <div class="platform-selection__wrap">
+                                    <p class="platform-selection__link platform-selection__link">
+                                        Carrier <span class="icon font-ico-arrow-down"></span>
+                                    </p>
+                                    <p class="platform-selection__item-content">Products, Solutions and Services for Carrier</p>
+                                </div>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <input title="main-nav" type="hidden" id='mainNav' value="nav-v2" />
+    <div class="v4 n01-main-navigation main-navigation nav-v2" data-component="n01-main-navigation">
+        <div class="container main-navigation__container">
+            <a data-title="logo" class="logo" href="/en/" data-navicon="logo">
+                <img src="/.resources/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/common-v4/images/logo.svg" width="142" alt="Huawei-v4" />
+                <img class="image-dark" src="/.resources/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/common-v4/images/logo-dark.svg" width="142" alt="Huawei-v4" />
+            </a>
+
+            <div class="nav-menuback-button">
+                <svg width="22"
+                     height="22"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.2426 6.34317L14.8284 4.92896L7.75739 12L14.8285 19.0711L16.2427 17.6569L10.5858 12L16.2426 6.34317Z"
+                          fill="currentColor"/>
+                </svg>
+            </div>
+
+            <nav class="main-nav" role="presentation">
+                <div class="main-nav-wrap">
+    <div class="lf-nav nav-zone">
+            <ul class="main-nav__list" role="menubar">
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="0">
+                            <a title="Smartphone" data-navicon="Smartphone" class="main-nav__link unhover title-hide-v5" href="/en/phones/" target="" rel="">Smartphone</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="1">
+                            <a title="Wearable" data-navicon="Wearable" class="main-nav__link unhover title-hide-v5" href="/en/wearables/" target="" rel="">Wearable</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="2">
+                            <a title="PC" data-navicon="PC" class="main-nav__link unhover title-hide-v5" href="/en/laptops/" target="" rel="">PC</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="3">
+                            <a title="Tablet" data-navicon="Tablet" class="main-nav__link unhover title-hide-v5" href="/en/tablets/" target="" rel="">Tablet</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="4">
+                            <a title="Audio" data-navicon="Audio" class="main-nav__link unhover title-hide-v5" href="/en/audio/" target="" rel="">Audio</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="5">
+                            <a title="Router" data-navicon="Router" class="main-nav__link unhover title-hide-v5" href="/en/routers/" target="" rel="">Router</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="6">
+                            <a title="HUAWEI Mobile Services" data-navicon="HUAWEI Mobile Services" class="main-nav__link unhover title-hide-v5" href="/en/mobileservices/" target="" rel="">HUAWEI Mobile Services</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+            </ul>
+    </div>
+
+    <div class="rg-nav nav-zone">
+            <ul class="main-nav__list" role="menubar">
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="0">
+                            <a title="Support" data-navicon="Support" class="main-nav__link unhover title-hide-v5" href="/en/support/" target="" rel="">Support</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+                        <li class="main-nav__item " role="menuitem"
+                            tabindex="1">
+                            <a title="Community" data-navicon="Community" class="main-nav__link unhover title-hide-v5" href="/en/community/" target="" rel="">Community</a>
+
+                                <div class="nav-submenu-item">
+
+                                </div>
+
+                        </li>
+            </ul>
+    </div>
+                </div>
+            </nav>
+
+            <div class="nav-addons">
+
+
+                <button class="nav-addons__link nav-addons__search js-open-search" aria-haspopup="true" role="button" aria-expanded="false" data-navicon="search">
+                <span class="icon font-ico-search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" color="#7f7f7f" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <span class="sr-only">Search</span>
+                </span>
+                </button>
+
+
+
+                <button aria-haspopup="true" role="button" aria-expanded="false" class="nav-toggle js-nav-toggle">
+                    <span class="icon font-ico-breadcrumbs">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g id="?_54960" data-name="? 54960" transform="translate(-1024 -207)">
+                                <rect id="????-54" width="16" height="16" transform="translate(1024 207)" fill="none" opacity="0.15"/>
+                                <path id="??_23452" data-name="?? 23452" d="M2836.948-2413a.667.667,0,0,1-.667-.667.666.666,0,0,1,.667-.667h12a.667.667,0,0,1,.667.667.667.667,0,0,1-.667.667Zm0-5.333a.667.667,0,0,1-.667-.667.667.667,0,0,1,.667-.667h12a.667.667,0,0,1,.667.667.667.667,0,0,1-.667.667Zm0-5.333a.667.667,0,0,1-.667-.667.667.667,0,0,1,.667-.667h12a.667.667,0,0,1,.667.667.667.667,0,0,1-.667.667Z" transform="translate(-1810.948 2634)" fill="#7f7f7f"/>
+                            </g>
+                        </svg>
+                        <span class="sr-only">Open menu</span>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="v4 n12-search popup nav-v2" data-component="n12-search">
+        <div class="container">
+            <button tabindex="-1" type="button" class="popup__close-btn js-close-popup">
+                <span class="sr-only">Close</span>
+            </button>
+            <div class="row">
+                <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2 col-md-10 offset-md-1">
+                    <div class="search__form-container">
+                        <label class="sr-only" for="search">search</label>
+                        <input class="search__form-input js-search-autocomplete" text="search" name="search" id="search" type="search"
+                               autocomplete="off" data-enable-ph-search="no" placeholder="Search HUAWEI...">
+                        <button class="search__form-submit" type="button">
+                        <span class="icon font-ico-search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" color="#7f7f7f" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                            <span class="sr-only">Search</span>
+                        </span>
+                        </button>
+                        <button class="search__form-clear js-search-clear" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="currentColor" fill-rule="evenodd" d="M11.809 1.563A10.628 10.628 0 1 1 1.181 12.191 10.63 10.63 0 0 1 11.809 1.563M8.886 8.016a.886.886 0 0 0-1.252 1.252l2.923 2.922-2.923 2.923a.886.886 0 0 0 1.252 1.25l2.923-2.923 2.922 2.923a.886.886 0 0 0 1.25-1.25l-2.922-2.923 2.922-2.922a.886.886 0 0 0-1.25-1.252l-2.922 2.922Z"></path>
+                                <path fill="rgba(255,255,255,0)" d="M0-.001h24v24H0z"></path>
+                            </svg>
+                            <span class="icon font-ico-close">
+                                <span class="sr-only">Close</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="popular-show-wrap">
+                        <div class="popular-wrap">
+                            <div class="top-title">
+Popular Products                            </div>
+                            <div class="popular-product dropdown__right">
+                                <div class="row  dropdown__row-mobile">
+
+                                </div>
+                                    <div class="row  dropdown__row-mobile">
+                                            <div class="list dropdown__right-col col-xl-4 col-xs-6">
+                                                <div>
+                                                    <a class="heading dropdown__series-link search-popular-product-link"
+                                                       data-position="1"
+                                                       target=""
+                                                       rel=""
+                                                       href="/en/wearables/watch-gt-runner-2/">
+                                                        HUAWEI WATCH GT Runner 2
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="list dropdown__right-col col-xl-4 col-xs-6">
+                                                <div>
+                                                    <a class="heading dropdown__series-link search-popular-product-link"
+                                                       data-position="2"
+                                                       target=""
+                                                       rel=""
+                                                       href="/en/phones/mate80-pro/">
+                                                        HUAWEI Mate 80 Pro
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="list dropdown__right-col col-xl-4 col-xs-6">
+                                                <div>
+                                                    <a class="heading dropdown__series-link search-popular-product-link"
+                                                       data-position="3"
+                                                       target=""
+                                                       rel=""
+                                                       href="/en/tablets/matepad-mini/">
+                                                        HUAWEI MatePad Mini
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="list dropdown__right-col col-xl-4 col-xs-6">
+                                                <div>
+                                                    <a class="heading dropdown__series-link search-popular-product-link"
+                                                       data-position="4"
+                                                       target=""
+                                                       rel=""
+                                                       href="/en/headphones/freebuds-pro-5/">
+                                                        HUAWEI FreeBuds Pro 5
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="list dropdown__right-col col-xl-4 col-xs-6">
+                                                <div>
+                                                    <a class="heading dropdown__series-link search-popular-product-link"
+                                                       data-position="5"
+                                                       target=""
+                                                       rel=""
+                                                       href="/en/wearables/band11-pro/">
+                                                        HUAWEI Band 11 Pro
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="list dropdown__right-col col-xl-4 col-xs-6">
+                                                <div>
+                                                    <a class="heading dropdown__series-link search-popular-product-link"
+                                                       data-position="6"
+                                                       target=""
+                                                       rel=""
+                                                       href="/en/wearables/watch-gt6-pro/">
+                                                        HUAWEI WATCH GT 6 Pro
+                                                    </a>
+                                                </div>
+                                            </div>
+                                    </div>
+                            </div>
+
+                        </div>
+                        <div class="quick-link">
+                            <div class="top-title">
+Quick View                            </div>
+                                <div class="link-wrap row">
+                                        <div class="col-sm-4 link-list">
+                                            <a data-title="Smartphone" class="search-quick-link" href="/en/phones/" target="_blank" target="noopener noreferrer">Smartphone</a>
+                                        </div>
+                                        <div class="col-sm-4 link-list">
+                                            <a data-title="Wearable" class="search-quick-link" href="/en/wearables/" target="_blank" target="noopener noreferrer">Wearable</a>
+                                        </div>
+                                        <div class="col-sm-4 link-list">
+                                            <a data-title="PC" class="search-quick-link" href="/en/laptops/" target="_blank" target="noopener noreferrer">PC</a>
+                                        </div>
+                                        <div class="col-sm-4 link-list">
+                                            <a data-title="Tablet" class="search-quick-link" href="/en/tablets/" target="_blank" target="noopener noreferrer">Tablet</a>
+                                        </div>
+                                        <div class="col-sm-4 link-list">
+                                            <a data-title="Audio" class="search-quick-link" href="/en/audio/" target="_blank" target="noopener noreferrer">Audio</a>
+                                        </div>
+                                        <div class="col-sm-4 link-list">
+                                            <a data-title="Router" class="search-quick-link" href="/en/routers/" target="_blank" target="noopener noreferrer">Router</a>
+                                        </div>
+                                        <div class="col-sm-4 link-list">
+                                            <a data-title="HUAWEI Mobile Services" class="search-quick-link" href="/en/mobileservices/" target="_blank" target="noopener noreferrer">HUAWEI Mobile Services</a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="hot-search-v5">
+                        <p>Popular results</p>
+                        <ul></ul>
+                    </div>
+                    <div class="suggested-search-v5">
+                        <p>Suggested results</p>
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="search_toast">
+                enter more search keys
+            </div>
+        </div>
+    </div>
+    <div class="v4 n16-simple-tabs simple-tabs simple-tabs__sticky" data-component="n16-simple-tabs" style="display: none;">
+        <div class="container">
+            <div class="wrap">
+                <ul class="simple-tabs__wrap">
+                    <li class="simple-tabs__continent" data-region="Africa">Africa</li>
+                    <li class="simple-tabs__continent" data-region="Asia Pacific">Asia Pacific</li>
+                    <li class="simple-tabs__continent" data-region="Europe">Europe</li>
+                    <li class="simple-tabs__continent" data-region="Latin America">Latin America</li>
+                    <li class="simple-tabs__continent" data-region="Middle East">Middle East</li>
+                    <li class="simple-tabs__continent" data-region="North America">North America</li>
+                    <li class="simple-tabs__continent" data-region="Global">Global</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="cookie-data" the-package-control-of-cookies-enabled="false">
+    <div class="required-category" category-display-name="">
+    </div>
+    <div class="analysis-category" category-display-name="">
+    </div>
+    <div class="advertise-category" category-display-name="">
+    </div>
+    <div class="function-category" category-display-name="">
+    </div>
+    <div class="unknown-category" category-display-name="">
+    </div>
+</div>
+
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/cookie-package-controller/js/cookie-package-controller-462618c3baceed89dd056d306c0e0a02718d4e252b28080bbe9679a9a5096cd7.min.js"></script>
+<div class="privacy-agreement-component">
+    <input type="hidden" id="privacy-popup-switch" value="false">
+    <input type="hidden" id="privacy-popup-title" value="">
+    <input type="hidden" id="privacy-popup-ids" value="">
+    <input type="hidden" id="privacy-language-code" value="en-GB">
+    <input type="hidden" id="privacy-popup-content" value="">
+    <input type="hidden" id="privacy-popup-agree" value="false">
+    <input type="hidden" id="privacy-popup-checkNote" value="">
+    <input type="hidden" id="privacy-popup-remark" value="">
+    <input type="hidden" id="privacy-popup-agreeText" value="">
+    <input type="hidden" id="privacy-popup-rejectText" value="">
+    <input type="hidden" id="privacy-close-i18n" value="Close">
+    <input type="hidden" id="privacy-errortip-i18n"
+           value="privacy_fetch_error_tip">
+    <script>
+        // ???????
+        var privacyPopupSwitch = false;
+		var __privacyAgree = false;
+		var privacyButtonLineStyle = Boolean(false);
+    </script>
+</div>
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/mkt-ad-banner/css/mkt-ad-banner-df8cbe404e357f743b2670e2e3992ceaffb5c38a30d37901cc6caf8666724362.min.css"/><script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/mkt-ad-banner/js/mkt-ad-banner-b50f075f8431157ad9a49bd4715bff328032dd05c2b13652698ca8933bda5fe3.min.js"></script>
+
+<main class="v4 main">
+    <div class="html-text-component parbase">
+        <script type="text/javascript">
+            	$(document).ready(function(){
+		var host = window.location.host;
+		if (host=="matters.huaweidevice.com"){
+		   document.location.href="http://matters.huaweidevice.com/minisite/error/";
+		}
+	});
+        </script>
+</div>
+<div class="huawei-v3">
+    <div class="error">
+        <div class="error-wrap">
+            <h2 class="error-tit">This page cannot be found</h2>
+            <div class="error-ipt-wrap">
+                <span class="error-seach js-open-search">
+                    <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none" fill-rule="evenodd" stroke="#1E1E1E"><circle cx="11" cy="10" r="6.5"></circle><path d="M16 15l4.5 4.5" stroke-linecap="round" stroke-linejoin="round"></path></g>
+                    </svg>
+                </span>
+                <label for="error-ipt" />
+                <input class="error-ipt js-open-search" id="error-ipt" type="text" placeholder="Search consumer.huawei.com" title="Search consumer.huawei.com" unselectable="on" readonly/>
+                <a href="javascript:;" class="error-bnt js-open-search" title="search"></a>
+            </div>
+            <div class="home-wrap">
+Use the search box or return to the <a href="https://consumer.huawei.com/en/">HOME PAGE &gt;</a>            </div>
+        </div>
+    </div>
+</div>
+<style>
+    @media (min-width: 1024px){
+        .huawei-v3 .header-wrap .right-box .search-wrap{  width: inherit!important;height: inherit!important;margin-top: 0!important;}
+        .huawei-v3 .header-wrap .right-box .search-wrap .a-common{ display: none!important;  }
+        .huawei-v3 .header-wrap-v3 .right-box .login-v3{   margin-left: 0!important; }
+    }
+
+    .huawei-v3 .error{height: 460px;background: #f3f3f3;}
+    .huawei-v3 .error .error-wrap{width: 1024px;margin: 0 auto;text-align: center;}
+    .huawei-v3 .error .error-tit{font-size: 48px;font-weight: 700;text-align: center;line-height: 54px;    padding: 85px 20px 0;}
+    .huawei-v3 .error .error-ipt-wrap{margin-top: 85px;position: relative;display: inline-block;}
+    .huawei-v3 .error .error-ipt-wrap input{width: 688px;height: 52px;line-height: 52px;border: 1px solid #aaaaaa;padding: 0 62px;margin: 0 auto;background: #ffffff;display: block;    border-radius: 8px;font-size: 16px;}
+    .huawei-v3 .error .error-ipt-wrap input::-webkit-input-placeholder { color: #8e8e8e; font-size: 16px;}
+    .huawei-v3 .error .error-ipt-wrap input:-moz-placeholder { color: #8e8e8e; font-size: 16px; }
+    .huawei-v3 .error .error-ipt-wrap input::-moz-placeholder { color: #8e8e8e; font-size: 16px; }
+    .huawei-v3 .error .error-ipt-wrap input:-ms-input-placeholder { color: #8e8e8e; font-size: 16px; }
+    .huawei-v3 .error .error-seach{    display: block;position: absolute;top: 50%;left: 20px;height: 24px;margin-top: -12px;}
+    .huawei-v3 .error .error-bnt{ display: block;   width: 24px;height: 24px;position: absolute;background: url('/.resources/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-v3/images/v3-icon.svg') no-repeat -248px -243px;top: 50%;right: 20px;margin-top: -12px;}
+    .huawei-v3 .error .home-wrap{padding-top: 28px;font-size: 16px;text-align: center; font-weight: 300;    color: #030303;}
+    .huawei-v3 .error .home-wrap a{    border-bottom: 1px solid #030303;color: #030303;}
+    .huawei-v3 .error .home-wrap a:hover{color: #d20a2c;border-bottom-color: #d20a2c;}
+
+
+    /* v4  page-not-found */
+    .v4 .error .error-seach:before {font-family: 'svgicons';-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;text-decoration: none;text-transform: none;display: block;line-height: 1;content: "\e01e";}
+    .v4 .huawei-v3 .error .error-ipt-wrap input{width: 814px;height: 72px;padding: 20px 80px 20px 32px;border-radius: 36px;border: 1px solid rgba(0,0,0,0.2);font-size: 26px;font-weight: 400;color: #000;letter-spacing: -0.5px;line-height: 30px;-webkit-transition: .3s ease-out;transition: .3s ease-out;font-family: "Manrope",Arial,Helvetica Neue,Helvetica,sans-serif;}
+    .v4 .huawei-v3 .error .error-seach{position: absolute;top: 5px;left: inherit;right: 14px;width: 60px;height: 60px;margin: 0;border-radius: 50%;font-size: 22px;color: #7f7f7f;display: flex;justify-content: center;align-items: center;cursor: pointer;}
+    .v4 .huawei-v3 .error .error-seach svg{display: none;}
+    .v4 .huawei-v3 .error .error-bnt{display: none;}
+    .v4 .huawei-v3 .error .error-ipt-wrap input::-webkit-input-placeholder {color: #7f7f7f;font-size: 26px;}
+    .v4 .huawei-v3 .error .error-ipt-wrap input:-moz-placeholder {color: #7f7f7f;font-size: 26px;}
+    .v4 .huawei-v3 .error .error-ipt-wrap input::-moz-placeholder {color: #7f7f7f;font-size: 26px;}
+    .v4 .huawei-v3 .error .error-ipt-wrap input:-ms-input-placeholder {color: #7f7f7f;font-size: 26px;}
+    html[dir=rtl]  .v4 .huawei-v3 .error .error-seach{left: 14px;right: inherit;}
+    html[dir=rtl] .v4 .huawei-v3 .error .error-ipt-wrap input{padding: 20px 32px 20px 80px;}
+    @media (max-width: 1023px){
+        .huawei-v3 .header-wrap .app-search{display: none!important;}
+        .huawei-v3 .error{height: 515px;}
+        .huawei-v3 .error .error-wrap{width: 100%;}
+        .huawei-v3 .error .error-tit{font-size: 40px;line-height: 46px;padding: 100px 20px 0;}
+        .huawei-v3 .error .error-ipt-wrap{width: 80%;margin: 90px auto 0;}
+        .huawei-v3 .error .error-ipt-wrap input{width:calc(100% - 80px);padding: 0 40px;font-size: 15px;}
+        .huawei-v3 .error .error-ipt-wrap input::-webkit-input-placeholder { color: #8e8e8e; font-size: 15px;}
+        .huawei-v3 .error .error-ipt-wrap input:-moz-placeholder { color: #8e8e8e; font-size: 15px; }
+        .huawei-v3 .error .error-ipt-wrap input::-moz-placeholder { color: #8e8e8e; font-size: 15px; }
+        .huawei-v3 .error .error-ipt-wrap input:-ms-input-placeholder { color: #8e8e8e; font-size: 15px; }
+        .huawei-v3 .error .error-seach{    left: 10px;}
+        .huawei-v3 .error .error-bnt{    right: 10px;}
+        .huawei-v3 .error .home-wrap{padding: 50px 20px 0;}
+        .v4 .huawei-v3 .error .error-ipt-wrap input{width:100%;}
+    }
+    @media (max-width: 767px) {
+        .v4 .huawei-v3 .error .error-seach{    width: 44px;height: 44px;right: 6px;}
+        html[dir=rtl]  .v4 .huawei-v3 .error .error-seach{left: 6px;right: inherit;}
+        .v4 .huawei-v3 .error .error-ipt-wrap input{  height: 56px;padding: 12px 50px 12px 24px;border-radius: 28px;font-size: 20px;}
+        html[dir=rtl] .v4 .huawei-v3 .error .error-ipt-wrap input{ padding: 12px 24px 12px 50px;}
+        .v4 .huawei-v3 .error .error-ipt-wrap input::-webkit-input-placeholder {font-size: 20px;}
+        .v4 .huawei-v3 .error .error-ipt-wrap input:-moz-placeholder {font-size: 20px;}
+        .v4 .huawei-v3 .error .error-ipt-wrap input::-moz-placeholder {font-size: 20px;}
+        .v4 .huawei-v3 .error .error-ipt-wrap input:-ms-input-placeholder {font-size: 20px;}
+
+    }
+    @media (max-width: 320px){
+        .huawei-v3 .error .error-ipt-wrap input{width:calc(100% - 80px);padding: 0 40px;font-size: 12px;}
+        .huawei-v3 .error .error-ipt-wrap input::-webkit-input-placeholder { color: #8e8e8e; font-size: 12px;}
+        .huawei-v3 .error .error-ipt-wrap input:-moz-placeholder { color: #8e8e8e; font-size: 12px; }
+        .huawei-v3 .error .error-ipt-wrap input::-moz-placeholder { color: #8e8e8e; font-size: 12px; }
+        .huawei-v3 .error .error-ipt-wrap input:-ms-input-placeholder { color: #8e8e8e; font-size: 12px; }
+    }
+</style>
+</main>
+<div class="v4 iparsys-from-home-v4">
+<div class="html-text-component parbase">
+        <script type="text/javascript">
+            $(window).on('load', function() {
+                    if(window.innerWidth>1366){
+                        setTimeout(function(){
+                            let headerHeight = $("#header-v4").innerHeight();
+                            $("#header-placeholder").css("height",headerHeight+"px");
+                        },100)
+                    } 
+                })
+        </script>
+</div>
+</div>
+
+
+
+
+
+<footer class="v4 n09-footer footer  v5-style" data-component="n09-footer"
+    style="--padding-top:40px;
+            --padding-top-xs: 40px;">
+    <div class="container">
+                <script type="application/ld+json">
+                    {"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://consumer.huawei.com/en/"},{"@type":"ListItem","position":2,"name":"Error","item":"https://consumer.huawei.com/en/error/"}]}
+                </script>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__item">
+                                    <a class="breadcrumbs__link" title="Home" href="/en/">Home</a>
+                            </li>
+                            <li class="breadcrumbs__item">
+                                    <span class="breadcrumbs__link">Error</span>
+                            </li>
+                </ul>
+            </div>
+
+        <div class="usp-wrap">
+
+
+        </div>
+        <div class="footer-links">
+<div class="row">
+
+
+<div class="col-xl-2 col-lg-4">
+    <div class="footer-links__block">
+        <div class="heading footer-links__title heading-06 js-footer-accordion-btn">
+PRODUCTS        </div>
+        <ul class="footer-links__list" role="menubar">
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Smartphone" data-title="Smartphone"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/phones/"
+                       target=""
+                       rel="">
+Smartphone                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Wearable" data-title="Wearable"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/wearables/"
+                       target=""
+                       rel="">
+Wearable                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="PC" data-title="PC"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/laptops/"
+                       target=""
+                       rel="">
+PC                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Tablet" data-title="Tablet"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/tablets/"
+                       target=""
+                       rel="">
+Tablet                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Audio" data-title="Audio"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/audio/"
+                       target=""
+                       rel="">
+Audio                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Router" data-title="Router"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/routers/"
+                       target=""
+                       rel="">
+Router                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Accessories" data-title="Accessories"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/accessories/overview/"
+                       target=""
+                       rel="">
+Accessories                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HarmonyOS 4" data-title="HarmonyOS 4"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/harmonyos-4/"
+                       target=""
+                       rel="">
+HarmonyOS 4                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="EMUI" data-title="EMUI"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/emui/"
+                       target=""
+                       rel="">
+EMUI                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Celia" data-title="Celia"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/emui/celia/"
+                       target=""
+                       rel="">
+Celia                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-xl-2 col-lg-4">
+    <div class="footer-links__block">
+        <div class="heading footer-links__title heading-06 js-footer-accordion-btn">
+MOBILE SERVICES        </div>
+        <ul class="footer-links__list" role="menubar">
+                <li class="footer-links__item" role="menuitem">
+                    <a title="AppGallery" data-title="AppGallery"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/appgallery/"
+                       target=""
+                       rel="">
+AppGallery                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI ID" data-title="HUAWEI ID"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/id/"
+                       target=""
+                       rel="">
+HUAWEI ID                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Mobile Cloud" data-title="HUAWEI Mobile Cloud"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/mobilecloud/"
+                       target=""
+                       rel="">
+HUAWEI Mobile Cloud                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Wallet" data-title="HUAWEI Wallet"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/wallet/"
+                       target=""
+                       rel="">
+HUAWEI Wallet                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Music" data-title="HUAWEI Music"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/music/"
+                       target=""
+                       rel="">
+HUAWEI Music                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Video" data-title="HUAWEI Video"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/video/"
+                       target=""
+                       rel="">
+HUAWEI Video                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Themes" data-title="HUAWEI Themes"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/themes/"
+                       target=""
+                       rel="">
+HUAWEI Themes                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Browser" data-title="HUAWEI Browser"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/browser/"
+                       target=""
+                       rel="">
+HUAWEI Browser                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Assistant TODAY" data-title="HUAWEI Assistant TODAY"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/assistant/"
+                       target=""
+                       rel="">
+HUAWEI Assistant TODAY                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Petal Maps" data-title="Petal Maps"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/petalmaps/"
+                       target=""
+                       rel="">
+Petal Maps                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Books" data-title="HUAWEI Books"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/books/"
+                       target=""
+                       rel="">
+HUAWEI Books                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Member Center" data-title="HUAWEI Member Center"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/member-center/"
+                       target=""
+                       rel="">
+HUAWEI Member Center                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI Health" data-title="HUAWEI Health"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/health/"
+                       target=""
+                       rel="">
+HUAWEI Health                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HUAWEI AI Life" data-title="HUAWEI AI Life"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/ai-life/"
+                       target=""
+                       rel="">
+HUAWEI AI Life                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="MeeTime" data-title="MeeTime"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/mobileservices/meetime/"
+                       target=""
+                       rel="">
+MeeTime                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-xl-2 col-lg-4">
+    <div class="footer-links__block">
+        <div class="heading footer-links__title heading-06 js-footer-accordion-btn">
+SUPPORT        </div>
+        <ul class="footer-links__list" role="menubar">
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Find Service Center" data-title="Find Service Center"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/support/service-center/"
+                       target=""
+                       rel="">
+Find Service Center                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Product Environmental Information" data-title="Product Environmental Information"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/support/product-environmental-information/"
+                       target=""
+                       rel="">
+Product Environmental Information                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Call Us" data-title="Call Us"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/support/hotline/"
+                       target=""
+                       rel="">
+Call Us                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="HiSuite" data-title="HiSuite"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/support/hisuite/"
+                       target=""
+                       rel="">
+HiSuite                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="The EU Data Act" data-title="The EU Data Act"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/support/data-act/"
+                       target=""
+                       rel="">
+The EU Data Act                    </a>
+                </li>
+        </ul>
+    </div>
+</div>
+
+<div class="col-xl-2 col-lg-4">
+    <div class="footer-links__block">
+        <div class="heading footer-links__title heading-06 js-footer-accordion-btn">
+ABOUT HUAWEI        </div>
+        <ul class="footer-links__list" role="menubar">
+                <li class="footer-links__item" role="menuitem">
+                    <a title="About Us" data-title="About Us"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/about-us/"
+                       target=""
+                       rel="">
+About Us                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="News" data-title="News"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/press/news/"
+                       target=""
+                       rel="">
+News                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Events" data-title="Events"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/press/events/"
+                       target=""
+                       rel="">
+Events                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Sustainability" data-title="Sustainability"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/sustainability/"
+                       target=""
+                       rel="">
+Sustainability                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Privacy" data-title="Privacy"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/privacy/"
+                       target=""
+                       rel="">
+Privacy                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Contact Us" data-title="Contact Us"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="/en/support/contact-us/"
+                       target=""
+                       rel="">
+Contact Us                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Corporate" data-title="Corporate"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="https://www.huawei.com/en/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+Corporate                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Enterprise" data-title="Enterprise"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="https://e.huawei.com/en/?ic_medium=hwdc&amp;ic_source=cbg_header_ent"
+                       target="_blank"
+                       rel="noopener noreferrer">
+Enterprise                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Carrier" data-title="Carrier"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="https://carrier.huawei.com/en/?ic_medium=hwdc&amp;ic_source=cbg_header_car"
+                       target="_blank"
+                       rel="noopener noreferrer">
+Carrier                    </a>
+                </li>
+                <li class="footer-links__item" role="menuitem">
+                    <a title="Join Us" data-title="Join Us"
+                       dmpaLabel=""
+                       class="footer-links__link  
+                                "
+                       href="https://career.huawei.com/reccampportal/campus4_index.html#campus4/content.html"
+                       target="_blank"
+                       rel="noopener noreferrer">
+Join Us                    </a>
+                </li>
+        </ul>
+    </div>
+</div></div>
+
+        </div>
+        <div class="contact">
+
+<div class="row">
+
+
+
+
+
+
+<div class="contact__block col-xl-4 col-md-6">
+            <div class="heading contact__title heading-06">Connect With Us</div>
+            <ul class="contact__social-links lazyload-target">
+                            <li class="contact__social-item">
+                                    <a title="facebook" class="contact__social-link" data-social="facebook"
+                                       href="https://www.facebook.com/huaweimobile" target="_blank" rel="noopener">
+                                        <span class="icon icon-lazy" data-name="font-ico-facebook">
+                                            <span class="sr-only"></span>
+                                        </span>
+                                    </a>
+                            </li>
+
+                            <li class="contact__social-item">
+                                    <a title="twitter" class="contact__social-link" data-social="twitter"
+                                       href="https://twitter.com/huaweimobile" target="_blank" rel="noopener">
+                                        <span class="icon icon-lazy" data-name="font-ico-twitter">
+                                            <span class="sr-only"></span>
+                                        </span>
+                                    </a>
+                            </li>
+
+                            <li class="contact__social-item">
+                                    <a title="instagram" class="contact__social-link" data-social="instagram"
+                                       href="https://www.instagram.com/huaweimobile" target="_blank" rel="noopener">
+                                        <span class="icon icon-lazy" data-name="font-ico-instagram">
+                                            <span class="sr-only"></span>
+                                        </span>
+                                    </a>
+                            </li>
+
+                            <li class="contact__social-item">
+                                    <a title="youtube" class="contact__social-link" data-social="youtube"
+                                       href="https://www.youtube.com/c/huaweimobile" target="_blank" rel="noopener">
+                                        <span class="icon icon-lazy" data-name="font-ico-youtube">
+                                            <span class="sr-only"></span>
+                                        </span>
+                                    </a>
+                            </li>
+
+                            <li class="contact__social-item">
+                                    <a title="TikTok" class="contact__social-link" data-social="TikTok"
+                                       href="https://www.tiktok.com/@huaweimobile" target="_blank" rel="noopener">
+                                        <span class="icon icon-lazy" data-name="font-ico-TikTok">
+                                            <span class="sr-only"></span>
+                                        </span>
+                                    </a>
+                            </li>
+
+                            <li class="contact__social-item">
+                                    <a title="linkedin" class="contact__social-link" data-social="linkedin"
+                                       href="https://www.linkedin.com/company/huawei-consumer-business-group/" target="_blank" rel="noopener">
+                                        <span class="icon icon-lazy" data-name="font-ico-linkedin">
+                                            <span class="sr-only"></span>
+                                        </span>
+                                    </a>
+                            </li>
+
+
+
+
+            </ul>
+        </div>
+
+</div>
+        </div>
+        <div class="footer-legals">
+<div class="row">
+    <div class="copyright col-xl-4 col-md-8">
+        <small class="copyright__text">Copyright © 1998-2026 Huawei Device Co., Ltd. All rights reserved.</small>
+    </div>
+    <div class="bottom-links col-xl-5">
+        <ul class="bottom-links__list">
+                <li class="bottom-links__item">
+                    <a title="Site Map" class="bottom-links__link" href="/en/sitemap/" target="">
+Site Map                    </a>
+                </li>
+                <li class="bottom-links__item">
+                    <a title="Terms Of Use" class="bottom-links__link" href="/en/legal/terms-of-use/" target="">
+Terms Of Use                    </a>
+                </li>
+                <li class="bottom-links__item">
+                    <a title="Privacy Statement" class="bottom-links__link" href="/en/privacy/privacy-policy/" target="">
+Privacy Statement                    </a>
+                </li>
+                <li class="bottom-links__item">
+                    <a title="Cookies" class="bottom-links__link" href="/en/legal/cookie-policy/" target="">
+Cookies                    </a>
+                </li>
+                <li class="bottom-links__item">
+                    <a title="Legal" class="bottom-links__link" href="/en/legal/" target="">
+Legal                    </a>
+                </li>
+
+        </ul>
+             <div class="language-switcher col-xl-3 col-md-4 ">
+
+                            <a href="/en/worldwide/" title="globe" target="" rel="">
+                                <span class="icon font-ico-globe"></span>
+                            </a>
+
+                        <a title="Global - English" class="language-switcher__link" href="/en/worldwide/" target="" rel="">Global - English</a>
+            </div>
+    </div>
+
+    <div class="language-switcher col-xl-3 col-md-4 ">
+                <a title="Global - English" class="language-switcher__link" href="/en/worldwide/" target="" rel="">Global - English</a>
+
+                    <a href="/en/worldwide/" title="globe" target="" rel="">
+                        <span class="icon font-ico-globe"></span>
+                    </a>
+    </div>
+
+    <input type="hidden" id="is_editor" data-is-editor-mode="false" value="false"/>
+
+
+</div>
+        </div>
+    </div>
+</footer>
+
+<link rel="stylesheet" type="text/css" href="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/external-link/css/external-link-popup-e0d0d59f61a8e0bfa968d40ca6211e0bd12fa9b23af7d9715ad8fa462c34cc81.min.css"/>
+    <div class="disclaimer-popup-component">
+        <div class="disclaimer-popup-content">
+            <div class="close-svg">
+                      <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle r="18.000000" transform="matrix(0 -1 -1 0 18 18)" fill="#999999"></circle><path d="M22.62 13.37L13.37 22.62" stroke="#f9f9f9" stroke-width="3.272727" stroke-linecap="round"></path><path d="M22.62 22.62L13.37 13.37" stroke="#f9f9f9" stroke-width="3.272727" stroke-linecap="round"></path></svg>
+            </div>
+            <div class="disclaimer-popup-content-box">
+                <div class="disclaimer-popup-top">
+                    <div class="disclaimer-popup-title">Leaving consumer.huawei.com</div>
+                    <div class="disclaimer-popup-description">After clicking the link, you will enter a third-party website. Huawei is not responsible and has no control over this third party website.</div>
+                    <div class="disclaimer-popup-link"></div>
+                </div>
+                <div class="disclaimer-popup-bottom">
+                    <div class="disclaimer-popup-bottom-box">
+                        <span class="btn disclaimer-popup-continue-btn">Continue</span>
+                        <span class="btn disclaimer-popup-cancel-btn">Return</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="/.resources/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/external-link/js/external-link-popup.js"  type="text/javascript" defer></script>
+
+
+
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/opensource/jquery-match-height/jquery.matchHeight-358e0431bc6382c9ff575334f67d6529a2e1ae4ccc174422c283377e4b357035.min.js"></script>    <script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/common-v4/js/base.built-78ea60ba344fd1a19f58e57de718e47b9f69b76727442bc6265a01c9adf2ca40.min.js"></script>
+<script src="/content/.resources/.rc/huawei-cbg-site-lm-basic/webresources/mkt/etc/designs/huawei-cbg-site/clientlib-campaign-v4/common-v4/js/common-v4-5a83505eb6f1a2d6f927571ad41d26203c1120e808863d2f08d88dbe8fa56c03.min.js"></script>
+
+<input type="hidden" id="hide-spu-questionnaire" value="0">
+
+</body>
+</html>
+
