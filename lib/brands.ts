@@ -1342,7 +1342,7 @@ export const products: Record<string, Product[]> = {
       category: "Smartphones",
       description: "Mid-range smartphone with great camera",
       image:
-        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ0SvsWz7azTsoKB7oV0hx0R44Xnf5qbuoa2sC9pd2A9z-ceuin1iMQ92rw-Lo4KZLizFivG6nH7oh0zW-3r7FbOPieq-D9",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQ0SvsWz7azTsoKB7omountpolehx0R44Xnf5qbuoa2sC9pd2A9z-ceuin1iMQ92rw-Lo4KZLizFivG6nH7oh0zW-3r7FbOPieq-D9",
     },
     {
       id: "m3",
@@ -1491,7 +1491,7 @@ export const products: Record<string, Product[]> = {
       category: "Smartphones",
       description: "Flagship smartphone with advanced features",
       image:
-        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQcCYpxMaIcjNtxD65V0dmiVtud2KkTr8SThJu4Ht7ox3mpFiq-x3qcKYylHQ6-F7Z9OSHP-w7dW-l9HDuDfK-70InOGISb",
+        "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQcCYpxMaIcjNtxD65mountpoledmiVtud2KkTr8SThJu4Ht7ox3mpFiq-x3qcKYylHQ6-F7Z9OSHP-w7dW-l9HDuDfK-70InOGISb",
     },
     {
       id: "h4",

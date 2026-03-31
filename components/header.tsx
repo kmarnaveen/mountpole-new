@@ -1,6 +1,7 @@
 'use client'
 
 import * as React from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Search, Menu, ShoppingCart, User, X } from "lucide-react"
@@ -25,13 +26,18 @@ export default function Header() {
   return (
     <div className="flex flex-col">
       <TopBar />
-      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
         <div className="container px-4 md:px-6 mx-auto h-16 flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 mr-6 shrink-0">
-               <div className="w-8 h-8 bg-foreground rounded-lg flex items-center justify-center text-background font-bold text-sm tracking-tight shadow-sm">
-                  MP
-                </div>
+               <Image
+                  src="/icon.svg"
+                  alt="MountPole logo"
+                  width={36}
+                  height={36}
+                  className="h-8 w-8 rounded-lg shadow-sm md:h-9 md:w-9"
+                  priority
+                />
                 <div className="flex flex-col">
                   <span className="font-semibold text-lg tracking-tight leading-none">MountPole</span>
                   <span className="font-light text-[10px] uppercase tracking-wider text-muted-foreground leading-none">Wholesale</span>
