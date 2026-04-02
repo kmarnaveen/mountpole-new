@@ -1,12 +1,38 @@
 import { NextResponse } from "next/server";
+import { appendContactSubmission } from "@/lib/google-sheets";
+
+export const runtime = "nodejs";
+
+type ContactSubmission = {
+  name?: string;
+  email?: string;
+  company?: string;
+  phone?: string;
+  message?: string;
+  product?: string;
+  sku?: string;
+  source?: string;
+};
+
+function normalizeValue(value?: string) {
+  return value?.trim() ?? "";
+}
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const { name, email, message } = body;
+    const body = (await req.json()) as ContactSubmission;
+    const name = normalizeValue(body.name);
+    const email = normalizeValue(body.email);
+    const company = normalizeValue(body.company);
+    const phone = normalizeValue(body.phone);
+    const message = normalizeValue(body.message);
+    const product = normalizeValue(body.product);
+    const sku = normalizeValue(body.sku);
+    const source =
+      normalizeValue(body.source) || (product || sku ? "product-quote" : "contact-form");
 
     // Input validation
-    if (!name?.trim() || !email?.trim() || !message?.trim()) {
+    if (!name || !email || !message) {
       return NextResponse.json(
         { error: "Name, email, and message are required." },
         { status: 400 },
@@ -21,31 +47,38 @@ export async function POST(req: Request) {
       );
     }
 
-    // TODO: Integrate an email service here, e.g.:
-    // import { Resend } from "resend"
-    // const resend = new Resend(process.env.RESEND_API_KEY)
-    // await resend.emails.send({
-    //   from: "noreply@mountpole.com",
-    //   to: "sales@mountpole.com",
-    //   subject: `Quote request from ${name}`,
-    //   text: `Name: ${name}\nEmail: ${email}\nCompany: ${company}\nMessage: ${message}`,
-    // })
+    const submittedAt = new Date().toISOString();
+    await appendContactSubmission({
+      submittedAt,
+      source,
+      name,
+      email,
+      company,
+      phone,
+      message,
+      product,
+      sku,
+      referrer: req.headers.get("referer") ?? "",
+      userAgent: req.headers.get("user-agent") ?? "",
+    });
 
     console.log("[Contact Form Submission]", {
-      name: body.name,
-      email: body.email,
-      company: body.company ?? "",
-      phone: body.phone ?? "",
-      message: body.message,
-      product: body.product ?? "",
-      sku: body.sku ?? "",
-      timestamp: new Date().toISOString(),
+      name,
+      email,
+      company,
+      phone,
+      message,
+      product,
+      sku,
+      source,
+      timestamp: submittedAt,
     });
 
     return NextResponse.json({ success: true });
-  } catch {
+  } catch (error) {
+    console.error("[Contact Form Submission Error]", error);
     return NextResponse.json(
-      { error: "Internal server error." },
+      { error: "Failed to send your request. Please try again." },
       { status: 500 },
     );
   }

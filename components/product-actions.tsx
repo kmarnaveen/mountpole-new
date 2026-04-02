@@ -47,6 +47,7 @@ export default function ProductActions({
           ...formData,
           product: productName,
           sku: productSku,
+          source: "product-quote",
         }),
       });
       if (!res.ok) {

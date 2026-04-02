@@ -5,14 +5,35 @@ import Image from "next/image"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Search, Menu, ShoppingCart, User, X } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle, SheetClose } from "@/components/ui/sheet"
+import { Button } from "@/components/ui/button";
 import { TopBar } from "@/components/top-bar"
 import { cn } from "@/lib/utils"
 
 export default function Header() {
   const [isSearchFocused, setIsSearchFocused] = React.useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const pathname = usePathname()
+
+  React.useEffect(() => {
+    if (!isMobileMenuOpen) {
+      return;
+    }
+
+    const previousOverflow = document.body.style.overflow;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setIsMobileMenuOpen(false);
+      }
+    };
+
+    document.body.style.overflow = "hidden";
+    window.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isMobileMenuOpen]);
 
   const navLinks = [
     { href: "/brands", label: "Brands" },
@@ -108,50 +129,94 @@ export default function Header() {
             </Button>
 
             {/* Mobile Menu */}
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="lg:hidden">
-                  <Menu className="w-5 h-5" />
-                  <span className="sr-only">Toggle menu</span>
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right">
-                <SheetHeader className="text-left border-b pb-4 mb-4">
-                  <SheetTitle className="font-bold text-xl">Menu</SheetTitle>
-                </SheetHeader>
-                <div className="flex flex-col gap-2">
-                  {navLinks.map((link) => (
-                    <SheetClose key={link.href} asChild>
-                      <Link
-                        href={link.href}
-                        className={cn(
-                          "px-4 py-3 text-lg font-medium hover:bg-muted rounded-md transition-colors",
-                          pathname === link.href
-                            ? "text-primary bg-primary/5"
-                            : "text-foreground",
-                        )}
-                      >
-                        {link.label}
-                      </Link>
-                    </SheetClose>
-                  ))}
-                  <div className="pt-4 mt-4 border-t flex flex-col gap-4">
-                    <Button className="w-full rounded-full" asChild>
-                      <Link href="/contact">Get Quote</Link>
-                    </Button>
-                    <Button
-                      variant="outline"
-                      className="w-full rounded-full"
-                      asChild
-                    >
-                      <Link href="/login">Login</Link>
-                    </Button>
-                  </div>
-                </div>
-              </SheetContent>
-            </Sheet>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="lg:hidden"
+              type="button"
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="site-mobile-menu"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+              onClick={() => setIsMobileMenuOpen((current) => !current)}
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
+              <span className="sr-only">Toggle menu</span>
+            </Button>
           </div>
         </div>
+
+        {isMobileMenuOpen ? (
+          <div className="lg:hidden fixed inset-0 z-50">
+            <button
+              type="button"
+              aria-label="Close menu"
+              className="absolute inset-0 bg-black/50"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+            <div
+              id="site-mobile-menu"
+              className="absolute inset-y-0 right-0 flex w-3/4 max-w-sm flex-col gap-4 border-l bg-background p-6 shadow-lg"
+            >
+              <div className="flex items-center justify-between border-b pb-4">
+                <p className="text-xl font-bold">Menu</p>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  type="button"
+                  aria-label="Close menu"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <X className="w-5 h-5" />
+                </Button>
+              </div>
+
+              <nav className="flex flex-col gap-2">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={cn(
+                      "rounded-md px-4 py-3 text-lg font-medium transition-colors hover:bg-muted",
+                      pathname === link.href
+                        ? "bg-primary/5 text-primary"
+                        : "text-foreground",
+                    )}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </nav>
+
+              <div className="mt-4 flex flex-col gap-4 border-t pt-4">
+                <Button className="w-full rounded-full" asChild>
+                  <Link
+                    href="/contact"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Get Quote
+                  </Link>
+                </Button>
+                <Button
+                  variant="outline"
+                  className="w-full rounded-full"
+                  asChild
+                >
+                  <Link
+                    href="/login"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Login
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        ) : null}
       </header>
     </div>
   );

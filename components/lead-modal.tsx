@@ -36,7 +36,11 @@ export default function LeadModal() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          message: formData.message || "Requested a quote via the lead modal.",
+          source: "lead-modal",
+        }),
       });
       if (!res.ok) {
         const data = await res.json().catch(() => ({}));
@@ -203,7 +207,7 @@ export default function LeadModal() {
                         sales@mountpole.com
                       </a>
                       <div className="flex items-start gap-2 text-sm font-light text-foreground/70">
-                        <MapPin className="w-4 h-4 text-foreground/50 mt-0.5 flex-shrink-0" />
+                        <MapPin className="w-4 h-4 text-foreground/50 mt-0.5 shrink-0" />
                         <div>
                           <p>Doral, Florida, USA</p>
                           <p>Mississauga, Ontario, Canada</p>
