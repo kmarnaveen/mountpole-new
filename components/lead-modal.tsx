@@ -5,6 +5,7 @@ import type React from "react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { X, Mail, Phone, MapPin } from "lucide-react";
+import { submitContactSubmission } from "@/lib/contact-submissions";
 
 export default function LeadModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,19 +34,11 @@ export default function LeadModal() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          message: formData.message || "Requested a quote via the lead modal.",
-          source: "lead-modal",
-        }),
+      await submitContactSubmission({
+        ...formData,
+        message: formData.message || "Requested a quote via the lead modal.",
+        source: "lead-modal",
       });
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || "Failed to send");
-      }
       setSubmitted(true);
       setTimeout(() => {
         setIsOpen(false);

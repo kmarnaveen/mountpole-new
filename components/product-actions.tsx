@@ -3,6 +3,7 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { X, Check } from "lucide-react";
+import { submitContactSubmission } from "@/lib/contact-submissions";
 
 interface ProductActionsProps {
   productName: string;
@@ -40,20 +41,12 @@ export default function ProductActions({
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          product: productName,
-          sku: productSku,
-          source: "product-quote",
-        }),
+      await submitContactSubmission({
+        ...formData,
+        product: productName,
+        sku: productSku,
+        source: "product-quote",
       });
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || "Failed to send");
-      }
       setSubmitted(true);
       setTimeout(() => {
         setQuoteOpen(false);

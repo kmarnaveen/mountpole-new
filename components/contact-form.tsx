@@ -3,6 +3,7 @@
 import { useState, type ChangeEvent, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
+import { submitContactSubmission } from "@/lib/contact-submissions";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -27,18 +28,10 @@ export default function ContactForm() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          ...formData,
-          source: "contact-page",
-        }),
+      await submitContactSubmission({
+        ...formData,
+        source: "contact-page",
       });
-      if (!res.ok) {
-        const data = await res.json().catch(() => ({}));
-        throw new Error(data.error || "Failed to send");
-      }
       setSubmitted(true);
     } catch (err) {
       setError(
