@@ -207,7 +207,7 @@ export default function Header() {
                   asChild
                 >
                   <Link
-                    href="/login"
+                    href="/admin/login"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Login

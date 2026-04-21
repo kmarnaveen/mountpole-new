@@ -1,6 +1,7 @@
-import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 import { NextRequest, NextResponse } from "next/server";
 import { appendContactSubmission } from "@/lib/google-sheets";
+import { getAdminSessionFromRequest } from "@/lib/admin-auth";
+import { listContactSubmissions } from "@/lib/contact-records";
 
 export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
@@ -15,31 +16,6 @@ type ContactSubmission = {
   sku?: string;
   source?: string;
 };
-
-type ContactSubmissionRecord = {
-  id: number;
-  submitted_at: string;
-  source: string;
-  name: string;
-  email: string;
-  company: string | null;
-  phone: string | null;
-  message: string;
-  product: string | null;
-  sku: string | null;
-  referrer: string | null;
-  user_agent: string | null;
-  created_at: string;
-};
-
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-const supabasePublishableKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
-const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY?.trim();
-const supabaseContactTable =
-  process.env.NEXT_PUBLIC_SUPABASE_CONTACT_TABLE?.trim() ||
-  "contact_submissions";
-
-let supabaseClient: SupabaseClient | null = null;
 
 function normalizeValue(value?: string) {
   return value?.trim() ?? "";
@@ -64,60 +40,53 @@ function parseInteger(
   return parsed;
 }
 
-function getSupabaseClient() {
-  const supabaseKey = supabaseServiceRoleKey || supabasePublishableKey;
-
-  if (!supabaseUrl || !supabaseKey) {
-    throw new Error("Supabase environment variables are not configured.");
-  }
-
-  if (!supabaseClient) {
-    supabaseClient = createClient(supabaseUrl, supabaseKey, {
-      auth: {
-        autoRefreshToken: false,
-        detectSessionInUrl: false,
-        persistSession: false,
-      },
-    });
-  }
-
-  return supabaseClient;
-}
-
 export async function GET(req: NextRequest) {
   try {
-    const limit = parseInteger(req.nextUrl.searchParams.get("limit"), 50, 1, 100);
-    const offset = parseInteger(req.nextUrl.searchParams.get("offset"), 0, 0);
-    const source = normalizeValue(req.nextUrl.searchParams.get("source") ?? undefined);
-    const client = getSupabaseClient();
-
-    let query = client.from(supabaseContactTable).select("*", { count: "exact" });
-
-    if (source) {
-      query = query.eq("source", source);
-    }
-
-    const { data, error, count } = await query
-      .order("submitted_at", { ascending: false })
-      .range(offset, offset + limit - 1);
-
-    if (error) {
-      throw error;
-    }
-
-    return NextResponse.json(
-      {
-        data: (data ?? []) as ContactSubmissionRecord[],
-        count: count ?? 0,
-        limit,
-        offset,
-      },
-      {
-        headers: {
-          "Cache-Control": "no-store",
+    if (!(await getAdminSessionFromRequest(req))) {
+      return NextResponse.json(
+        { error: "Unauthorized" },
+        {
+          status: 401,
+          headers: {
+            "Cache-Control": "no-store",
+          },
         },
-      },
+      );
+    }
+
+    const limit = parseInteger(
+      req.nextUrl.searchParams.get("limit"),
+      50,
+      1,
+      100,
     );
+    const offset = parseInteger(req.nextUrl.searchParams.get("offset"), 0, 0);
+    const query = normalizeValue(
+      req.nextUrl.searchParams.get("q") ?? undefined,
+    );
+    const source = normalizeValue(
+      req.nextUrl.searchParams.get("source") ?? undefined,
+    );
+    const status = normalizeValue(
+      req.nextUrl.searchParams.get("status") ?? undefined,
+    );
+    const followUpStage = normalizeValue(
+      req.nextUrl.searchParams.get("followUpStage") ?? undefined,
+    );
+    const result = await listContactSubmissions({
+      limit,
+      offset,
+      query,
+      source,
+      status,
+      followUpStage,
+    });
+
+    return NextResponse.json(result, {
+      headers: {
+        "Cache-Control": "no-store",
+      },
+    });
   } catch (error) {
     console.error("[Contact Submission List Error]", error);
     return NextResponse.json(
@@ -143,7 +112,8 @@ export async function POST(req: Request) {
     const product = normalizeValue(body.product);
     const sku = normalizeValue(body.sku);
     const source =
-      normalizeValue(body.source) || (product || sku ? "product-quote" : "contact-form");
+      normalizeValue(body.source) ||
+      (product || sku ? "product-quote" : "contact-form");
 
     // Input validation
     if (!name || !email || !message) {
